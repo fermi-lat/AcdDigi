@@ -23,7 +23,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.10 2002/12/17 21:36:06 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.11 2003/01/16 01:20:20 burnett Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -50,6 +50,8 @@ private:
     /// based on the location of the hit
     double edgeEffect(const Event::McPositionHit *hit);
     
+    /// Default value read in from XML file
+    double m_low_threshold_mips_xml;
     /// Low discrim threshold which activates PHA
     double m_low_threshold_mips;  
     /// High discrim threshold for CNO
