@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CPP 
 
 // File and Version Information:
-// $Header$
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.10 2002/09/09 16:42:45 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -275,7 +275,9 @@ void AcdDigiAlg::getParameters() {
     m_mips_full_scale = xmlFilePtr.getDouble("global_constants", "mips_full_scale", 20.0);
     
     m_mev_per_mip = xmlFilePtr.getDouble("global_constants", "mev_per_mip", 1.9);
-    
+
+    m_max_edge_dist = xmlFilePtr.getDouble("edge_effects", "max_edge_dist", 20.0);
+
     return;
 }
 
@@ -327,8 +329,8 @@ double AcdDigiAlg::edgeEffect(const Event::McPositionHit *hit)  {
         dist = (dist_z < dist_x) ? dist_z : dist_x;
     }
     
-    // Apply edge correction if within 20 mm of the edge
-    if (dist < 20.0) {
+    // Apply edge correction if within m_max_edge_dist (mm) of the edge
+    if (dist < m_max_edge_dist) {
         return ( (0.1*dist + 0.8) * hit->depositedEnergy() );   
     } else {
         return hit->depositedEnergy();
