@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Aug  9 12:13:22 PDT 2002
+AcdDigi/src/Dll
+
+Modified Files:
+	AcdDigi_load.cxx 
+Log Message:
+leave algorithm using McIntegratingHit as an option
+    *
+------------------------------------------------------------
 User: heather  Fri Aug  9 12:12:07 PDT 2002
 AcdDigi/doc
 
