@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: kyoung  Tue Oct  8 15:11:19 PDT 2002
+AcdDigi/src
+
+Added Files:
+	AcdDigiRandom.cxx 
+Log Message:
+Add AcdDigiRandom tool
+    *
+------------------------------------------------------------
 User: heather  Fri Sep 27 12:40:06 PDT 2002
 AcdDigi/src/test/util
 
