@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Tue Mar 18 07:26:58 PST 2003
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx 
+Log Message:
+check that there are some ACD tiles in the geometry before printing log message
+Thanks to Xin Chen for pointing out the bug
+    *
+------------------------------------------------------------
 User: heather  Tue Mar 18 07:25:59 PST 2003
 AcdDigi/doc
 
