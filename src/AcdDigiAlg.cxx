@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.16 2003/03/18 15:26:58 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.17 2003/07/14 17:18:58 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -280,7 +280,7 @@ StatusCode AcdDigiAlg::execute() {
 
         // Next check that the PHA values from both PMTs combined results is a value above low 
         // threshold
-        if ((m_pmtA_phaMipsMap[tileId] + m_pmtB_phaMipsMap[tileId]) < m_low_threshold_mips) continue;
+        if ((m_pmtA_phaMipsMap[tileId] < m_low_threshold_mips) && (m_pmtB_phaMipsMap[tileId] < m_low_threshold_mips)) continue;
 
         // Initialize discriminators
         bool lowArr[2] = { true, true };
