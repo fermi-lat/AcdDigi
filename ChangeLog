@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Jul 26 10:48:03 PDT 2002
+AcdDigi/AcdDigi
+
+Added Files:
+	AcdDigiUtil.h 
+Log Message:
+new class for new digitization algorithm
+    *
+------------------------------------------------------------
 User: heather  Fri Jul 26 10:47:20 PDT 2002
 AcdDigi/AcdDigi
 
