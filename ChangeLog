@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Mon Jul 29 13:52:58 PDT 2002
+AcdDigi/xml
+
+Modified Files:
+	acdDigi.xml 
+Added Files:
+	acdDigiOrg.xml 
+Log Message:
+2 XML files - one for old digi alg and the other for current
+    *
+------------------------------------------------------------
 User: heather  Mon Jul 29 13:52:27 PDT 2002
 AcdDigi/cmt
 
