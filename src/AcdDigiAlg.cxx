@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.21 2004/05/17 10:23:50 kuss Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.22 2004/06/09 19:19:11 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -333,7 +333,7 @@ void AcdDigiAlg::getParameters() {
 
     MsgStream log(msgSvc(), name());
  
-    xml::IFile xmlFilePtr(m_xmlFile.c_str());
+    xmlBase::IFile xmlFilePtr(m_xmlFile.c_str());
     
         // Perform some spot checking to see if our XML file contains our constants
     if (!xmlFilePtr.contains("thresholds", "low_threshold_mips")) {

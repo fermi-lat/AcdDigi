@@ -7,7 +7,7 @@
 #include "idents/AcdId.h"
 
 // to access an XML containing Digi parameters file
-#include "xml/IFile.h"
+#include "xmlBase/IFile.h"
 #include "facilities/Util.h"
 
 
@@ -19,7 +19,7 @@
 * them on the TDS, using the McIntegratingHit collection.
 *
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiMcIntHitAlg.h,v 1.3 2002/09/09 16:42:45 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiMcIntHitAlg.h,v 1.4 2002/09/27 19:39:08 heather Exp $
 */
 
 class AcdDigiMcIntHitAlg : public Algorithm {
