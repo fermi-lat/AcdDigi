@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.18 2003/07/15 19:59:23 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.19 2003/09/23 20:22:24 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -15,6 +15,7 @@
 #include "GaudiKernel/ObjectVector.h"
 
 #include "Event/TopLevel/EventModel.h"
+#include "Event/TopLevel/DigiEvent.h"
 #include "Event/TopLevel/Event.h"
 #include "Event/Digi/AcdDigi.h"
 
@@ -115,7 +116,7 @@ StatusCode AcdDigiAlg::execute() {
     sc = eventSvc()->retrieveObject( EventModel::Digi::Event , pNode);
     
     if (sc.isFailure()) {
-        sc = eventSvc()->registerObject(EventModel::Digi::Event ,new DataObject);
+        sc = eventSvc()->registerObject(EventModel::Digi::Event ,new Event::DigiEvent);
         if( sc.isFailure() ) {
             log << MSG::ERROR << "could not register " << EventModel::Digi::Event << endreq;
             return sc;

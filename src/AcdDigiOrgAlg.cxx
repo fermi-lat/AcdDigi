@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiOrgAlg_CPP 
 
 // File and Version Information:
-// $Header$
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiOrgAlg.cxx,v 1.3 2002/09/09 16:42:45 heather Exp $
 // Description:
 // Initial version of ACD digitization used for the PDR studies.
 // ACD Monte Carlo hit data are assumed to be stored in McIntegratingHits.
@@ -14,6 +14,7 @@
 #include "GaudiKernel/SmartDataPtr.h"
 
 #include "Event/TopLevel/EventModel.h"
+#include "Event/TopLevel/DigiEvent.h"
 #include "Event/TopLevel/Event.h"
 #include "GaudiKernel/ObjectVector.h"
 #include "Event/Digi/AcdDigi.h"
@@ -81,7 +82,7 @@ StatusCode AcdDigiOrgAlg::execute() {
     sc = eventSvc()->retrieveObject( EventModel::Digi::Event , pNode);
     
     if (sc.isFailure()) {
-        sc = eventSvc()->registerObject(EventModel::Digi::Event ,new DataObject);
+        sc = eventSvc()->registerObject(EventModel::Digi::Event ,new Event::DigiEvent);
         if( sc.isFailure() ) {
             log << MSG::ERROR << "could not register " << EventModel::Digi::Event << endreq;
             return sc;
