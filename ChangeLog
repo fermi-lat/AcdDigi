@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: kyoung  Tue Oct  8 15:11:20 PDT 2002
+AcdDigi/src/Dll
+
+Modified Files:
+	AcdDigi_load.cxx 
+Log Message:
+Add AcdDigiRandom tool
+    *
+------------------------------------------------------------
 User: kyoung  Tue Oct  8 15:11:19 PDT 2002
 AcdDigi/src
 
