@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: berthon  Mon Jan 19 02:28:55 PST 2004
-AcdDigi/src
-
-Modified Files:
-	AcdDigiAlg.cxx AcdDigiMcIntHitAlg.cxx AcdDigiOrgAlg.cxx 
-Log Message:
-correct DataObject to DigiEvent for registering into TDS
-    *
-------------------------------------------------------------
 User: heather  Fri Oct 10 10:28:49 PDT 2003
 AcdDigi/src
 
