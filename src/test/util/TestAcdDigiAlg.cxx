@@ -1,4 +1,9 @@
-#define AcdDigi_TestAcdDigiAlg_CPP 
+#define AcdDigi_TestAcdDigiAlg_CXX
+
+// File and Version Information
+// $Header$
+// Description:
+// Test for AcdUtil class. 
 
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -19,7 +24,7 @@
  *
  * Exercise all of AcdDigiUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.1 2002/07/29 20:53:30 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.2 2002/09/04 20:26:21 heather Exp $
  */
 
 class TestAcdDigiAlg : public Algorithm {
