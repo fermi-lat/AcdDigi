@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Sep  2 13:01:25 PDT 2002
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+clean up to allow test program to run
+    *
+------------------------------------------------------------
 User: heather  Tue Aug 27 15:20:27 PDT 2002
 AcdDigi/xml
 
