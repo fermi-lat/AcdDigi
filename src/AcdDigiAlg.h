@@ -20,7 +20,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.5 2002/08/09 19:15:46 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.6 2002/09/04 20:25:22 heather Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -73,6 +73,9 @@ private:
     
     /// MeV per MIP
     float m_mev_per_mip;
+
+    /// Distance (mm) cutoff for applying edge effects
+    float m_max_edge_dist;
     
     /// JobOptions parameter denoting whether or not to perform auto 
     /// calibration to determine the number of MIPs for full scale PHA
