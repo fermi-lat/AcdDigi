@@ -1,6 +1,6 @@
 package AcdDigi
-version v1r7p2
-# $Id: requirements,v 1.15 2003/01/16 01:26:55 burnett Exp $
+version v1r7p3
+# $Id: requirements,v 1.16 2003/03/18 15:25:22 heather Exp $
 
 use GlastSvc v9r*
 use Event v9r*
