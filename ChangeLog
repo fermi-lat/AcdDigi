@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Tue Dec 17 13:36:06 PST 2002
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.h AcdDigiAlg.cxx 
+Added Files:
+	AcdTileList.h AcdTileList.cxx 
+Log Message:
+allow for noise in tiles not actually hit
+    *
+------------------------------------------------------------
 User: heather  Tue Dec 17 13:17:04 PST 2002
 AcdDigi/cmt
 
