@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov 10 16:16:21 PST 2004
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Change use of xml to use v5r*  (for Xerces 2.6.0)
+
+    *
+------------------------------------------------------------
 User: heather  Wed Jul 21 23:12:07 PDT 2004
 AcdDigi/doc
 
