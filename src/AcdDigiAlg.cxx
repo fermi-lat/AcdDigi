@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.19 2003/09/23 20:22:24 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.20 2004/01/19 10:28:55 berthon Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -348,7 +348,7 @@ void AcdDigiAlg::getParameters() {
     
     m_noise_std_dev_pha = xmlFilePtr.getDouble("global_constants", "noise_std_dev_pha", 0.02);
     m_noise_std_dev_veto = xmlFilePtr.getDouble("global_constants", "noise_std_dev_veto", 0.02);
-    m_noise_std_dev_veto = xmlFilePtr.getDouble("global_constants", "noise_std_dev_cno", 0.02);
+    m_noise_std_dev_cno = xmlFilePtr.getDouble("global_constants", "noise_std_dev_cno", 0.02);
     
     m_full_scale = xmlFilePtr.getInt("global_constants", "full_scale", 4095);
     
