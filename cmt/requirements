@@ -1,6 +1,6 @@
 package AcdDigi
-version v1r6
-# $Id: requirements,v 1.13 2002/11/29 18:27:12 burnett Exp $
+version v1r7p1
+# $Id: requirements,v 1.14 2003/01/09 22:09:27 als Exp $
 
 use GlastSvc v9r*
 use Event v9r*
@@ -25,8 +25,7 @@ apply_pattern package_Cshlibflags
 
 
 application test_AcdUtil AcdDigiUtil.cxx test/util/*.cxx \
-                         ${GLASTPOLICYROOT}/src/GlastMain.cxx ${GLASTPOLICYROOT}/src/setPriority.cxx \
-                         ${AcdDigi_headers}
+                         $(TestGlastMain) ${AcdDigi_headers}
 
 public
 
