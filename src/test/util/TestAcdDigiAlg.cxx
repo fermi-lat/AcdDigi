@@ -1,7 +1,7 @@
 #define AcdDigi_TestAcdDigiAlg_CXX
 
 // File and Version Information
-// $Header$
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.3 2002/09/09 16:45:55 heather Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -24,7 +24,7 @@
  *
  * Exercise all of AcdDigiUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.2 2002/09/04 20:26:21 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.3 2002/09/09 16:45:55 heather Exp $
  */
 
 class TestAcdDigiAlg : public Algorithm {
@@ -101,7 +101,7 @@ StatusCode TestAcdDigiAlg::execute() {
     log << MSG::DEBUG << pmtA_mips << " is " << pmtA_pe << " pes" << endreq;
     log << MSG::DEBUG << pmtB_mips << " is " << pmtB_pe << " pes" << endreq;
 
-    float pmtA2_mips, pmtB2_mips;
+    double pmtA2_mips, pmtB2_mips;
 
     m_util.convertPhotoElectronsToMips(id, pmtA_pe, pmtA2_mips,
         pmtB_pe, pmtB2_mips);
@@ -109,7 +109,7 @@ StatusCode TestAcdDigiAlg::execute() {
     log << MSG::DEBUG << pmtA_pe << " is " << pmtA2_mips << " MIPs" << endreq;
     log << MSG::DEBUG << pmtB_pe << " is " << pmtB2_mips << " MIPs" << endreq;
 
-    float mipsToFullScaleA, mipsToFullScaleB;
+    double mipsToFullScaleA, mipsToFullScaleB;
 
     m_util.calcMipsToFullScale(id, pmtA_mips, pmtA_pe, 
         mipsToFullScaleA, pmtB_mips, pmtB_pe, mipsToFullScaleB );

@@ -19,7 +19,7 @@
 * them on the TDS, using the McIntegratingHit collection.
 *
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiMcIntHitAlg.h,v 1.2 2002/09/04 20:25:22 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiMcIntHitAlg.h,v 1.3 2002/09/09 16:42:45 heather Exp $
 */
 
 class AcdDigiMcIntHitAlg : public Algorithm {
@@ -60,10 +60,10 @@ private:
     unsigned short m_mean_pe_per_mip;
     
     /// number of MIPs that correspond to full scale PHA
-    float m_mips_full_scale;
+    double m_mips_full_scale;
     
     /// MeV per MIP
-    float m_mev_per_mip;
+    double m_mev_per_mip;
     
     /// jobOptions parameter denoting whether or not to perform auto 
     /// calibration to determine the number of MIPs for full scale PHA
