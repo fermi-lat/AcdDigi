@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu May 23 12:05:52 PDT 2002
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx 
+Log Message:
+move xml file from GlastDigi to here
+    *
+------------------------------------------------------------
 User: heather  Thu May 23 12:05:25 PDT 2002
 AcdDigi/xml
 
