@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: heather  Fri Jul 26 10:51:34 PDT 2002
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h 
+Added Files:
+	AcdDigiOrgAlg.cxx AcdDigiOrgAlg.h AcdDigiUtil.cxx 
+Log Message:
+add new digitization algorithm and keeping the old one which
+is renamed AcdDigiOrgAlg
+    *
+------------------------------------------------------------
 User: heather  Fri Jul 26 10:50:55 PDT 2002
 AcdDigi/doc
 
