@@ -14,7 +14,7 @@
 * @brief Utility class that defines the methods used for ACD digitization.
 * 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.2 2002/09/04 20:25:22 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.3 2002/09/27 19:39:08 heather Exp $
 */
 
 class AcdDigiUtil  {
@@ -71,7 +71,7 @@ public:
 
     /// Returns a value sampled from a Poisson distribution
     /// @param pmtPhotoElectrons is the mean of the Poisson distribution
-    static long shootPoisson(long pmtPhotoElectrons);
+    static long shootPoisson(double pmtPhotoElectrons);
 
     /// Returns a value sampled from a Gaussian distribution
     /// @param std_dev Standard Deviation to be  used when sampling
