@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun  5 06:22:01 PDT 2002
+AcdDigi/src
+
+Modified Files:
+	mainpage.h AcdDigiAlg.h AcdDigiAlg.cxx 
+Log Message:
+store energy as well - as a check on pha 
+    *
+------------------------------------------------------------
 User: heather  Wed Jun  5 06:20:56 PDT 2002
 AcdDigi/src/test
 
