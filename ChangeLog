@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Mon Jul 29 13:54:46 PDT 2002
+AcdDigi/src/test
+
+Modified Files:
+	jobOptions.txt 
+Removed Files:
+	TestAcdDigiUtil.cxx 
+Log Message:
+move test for AcdDigiUtil into separate directory
+    *
+------------------------------------------------------------
 User: heather  Mon Jul 29 13:53:30 PDT 2002
 AcdDigi/src/test/util
 
