@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Jul 14 10:18:59 PDT 2003
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx 
+Log Message:
+Fix edge dist computation for Y tiles
+    *
+------------------------------------------------------------
 User: heather  Tue Mar 18 07:26:58 PST 2003
 AcdDigi/src
 
