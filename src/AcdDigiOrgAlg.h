@@ -2,7 +2,7 @@
 #define _AcdDigi_AcdDigiOrgAlg_H 1
 
 #include "GaudiKernel/Algorithm.h"
-namespace xml { class IFile; }
+// namespace xmlBase { class IFile; }
 
 /** @class AcdDigiOrgAlg
   * @brief Algorithm to convert from hit data into digitization data 
@@ -12,7 +12,7 @@ namespace xml { class IFile; }
   * them on the TDS.
   *
   * @author Heather Kelly
-  * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiOrgAlg.h,v 1.1 2002/07/26 17:51:33 heather Exp $
+  * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiOrgAlg.h,v 1.2 2002/09/04 20:25:22 heather Exp $
   */
 
 class AcdDigiOrgAlg : public Algorithm {

@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiMcIntHitAlg_CPP 
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiMcIntHitAlg.cxx,v 1.5 2002/09/27 19:39:08 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiMcIntHitAlg.cxx,v 1.6 2004/01/19 10:28:55 berthon Exp $
 // Description
 // Algorithm to convert from hit data into digitization data 
 // for the ACD.  This version assumes the Monte Carlo hit data is stored
@@ -212,7 +212,7 @@ void AcdDigiMcIntHitAlg::getParameters() {
     //   parameters, if not, an information message is provided as output.
     
     MsgStream log(msgSvc(), name());
-    xml::IFile xmlFilePtr(m_xmlFile.c_str());
+    xmlBase::IFile xmlFilePtr(m_xmlFile.c_str());
     
     // Perform some spot checking to see if our XML file contains our constants
     if (!xmlFilePtr.contains("thresholds", "low_threshold_mips")) {

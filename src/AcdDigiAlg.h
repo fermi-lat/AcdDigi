@@ -10,7 +10,7 @@
 #include "Event/MonteCarlo/McPositionHit.h"
 
 // to access an XML containing Digi parameters file
-#include "xml/IFile.h"
+#include "xmlBase/IFile.h"
 #include "facilities/Util.h"
 
 #include "AcdTileList.h"
@@ -23,7 +23,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.11 2003/01/16 01:20:20 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.12 2004/06/09 19:19:11 heather Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
