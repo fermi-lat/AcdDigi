@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: heather  Tue Jun  4 15:27:12 PDT 2002
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx 
+Log Message:
+update for new AcdDigi in the Event package - there are now 2
+PMTs per AcdDigi - so we need to provide 2 phas and 2 sets
+of discriminators per tile.  For now, only the first set is being filled,
+the new version of this algorithm will split the signal.
+    *
+------------------------------------------------------------
 User: heather  Thu May 23 12:07:34 PDT 2002
 AcdDigi/cmt
 
