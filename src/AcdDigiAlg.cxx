@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.20 2004/01/19 10:28:55 berthon Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.21 2004/05/17 10:23:50 kuss Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -60,8 +60,14 @@ StatusCode AcdDigiAlg::initialize() {
     // Use the Job options service to set the Algorithm's parameters
     // This will retrieve parameters set in the job options file
     setProperties();
-    
+
     getParameters();
+
+    declareProperty("lowThreshold", m_low_threshold_mips = m_low_threshold_mips_xml);
+    // Call setProperies again to grab the low threshold if it is available
+    // in the JO file - we needed the name of the input xml file first
+    setProperties();
+    log << MSG::DEBUG << "Set LowThreshold = " << m_low_threshold_mips << endreq; 
 
 	// read in the parameters from our input XML file
     util.getParameters(m_xmlFile);
@@ -335,7 +341,7 @@ void AcdDigiAlg::getParameters() {
             << " does not contain low_threshold_mips using default" << endreq;
     }
 
-    m_low_threshold_mips = xmlFilePtr.getDouble("thresholds", "low_threshold_mips", 0.1);
+    m_low_threshold_mips_xml = xmlFilePtr.getDouble("thresholds", "low_threshold_mips", 0.1);
     m_veto_threshold_mips = xmlFilePtr.getDouble("thresholds", "veto_threshold_mips", 0.3);
     m_high_threshold_mips = xmlFilePtr.getDouble("thresholds", "high_threshold_mips", 10.5);
     
