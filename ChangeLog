@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Jan 15 17:20:20 PST 2003
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.h 
+Log Message:
+remove illegal const
+    *
+------------------------------------------------------------
 User: als  Thu Jan  9 14:09:27 PST 2003
 AcdDigi/cmt
 
