@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun 12 17:53:55 PDT 2002
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx 
+Log Message:
+fix interpretation of volume id to get proper acdId
+    *
+------------------------------------------------------------
 User: heather  Wed Jun 12 17:52:50 PDT 2002
 AcdDigi/cmt
 
