@@ -19,7 +19,7 @@
  *
  * Exercise all of AcdDigiUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/TestAcdDigiUtil.cxx,v 1.1 2002/07/26 17:53:29 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.1 2002/07/29 20:53:30 heather Exp $
  */
 
 class TestAcdDigiAlg : public Algorithm {
@@ -118,9 +118,9 @@ StatusCode TestAcdDigiAlg::execute() {
     log << MSG::DEBUG << "pmtA_pha " << pmtA_pha << endreq;
     log << MSG::DEBUG << "pmtB_pha " << pmtB_pha << endreq;
 
-    m_poisson.push_back(m_util.calcPoisson(5));
+    m_poisson.push_back(m_util.shootPoisson(5));
 
-    m_gauss.push_back(m_util.calcGaussianNoise(1.0));
+    m_gauss.push_back(m_util.shootGaussian(1.0));
 
     return sc;
 }
