@@ -1,6 +1,6 @@
 package AcdDigi
-version v1r10
-# $Id: requirements,v 1.20 2003/10/10 17:27:30 heather Exp $
+version v1r10p0
+# $Id: requirements,v 1.21 2004/06/09 19:18:36 heather Exp $
 
 use GlastSvc v9r*
 use Event v9r*
@@ -22,6 +22,7 @@ library AcdDigi *.cxx \
                 ${AcdDigi_headers}               
 
 apply_pattern package_Cshlibflags
+private
 
 
 application test_AcdUtil AcdDigiUtil.cxx test/util/*.cxx \
