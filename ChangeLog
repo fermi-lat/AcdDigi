@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Fri Sep 27 12:39:08 PDT 2002
+AcdDigi/src
+
+Modified Files:
+	mainpage.h AcdDigiUtil.h AcdDigiUtil.cxx AcdDigiMcIntHitAlg.h 
+	AcdDigiMcIntHitAlg.cxx AcdDigiAlg.h AcdDigiAlg.cxx 
+Log Message:
+use double rather than float
+    *
+------------------------------------------------------------
 User: heather  Fri Sep 27 12:27:50 PDT 2002
 AcdDigi/cmt
 
