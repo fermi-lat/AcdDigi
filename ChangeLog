@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Mon Jul 29 14:02:51 PDT 2002
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.h AcdDigiUtil.cxx mainpage.h 
+Added Files:
+	AcdDigiUtil.h 
+Log Message:
+fix up includes and update mainpage
+    *
+------------------------------------------------------------
 User: heather  Mon Jul 29 13:54:46 PDT 2002
 AcdDigi/src/test
 
