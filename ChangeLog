@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: als  Thu Jan  9 14:09:27 PST 2003
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+sandbox merge
+
+remove GaudiSvc use 
+update version to v1r7
+
+    *
+------------------------------------------------------------
 User: heather  Tue Dec 31 10:43:11 PST 2002
 AcdDigi/xml
 
