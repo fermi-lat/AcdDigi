@@ -20,7 +20,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.7 2002/09/09 19:43:50 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.8 2002/09/27 19:39:08 heather Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -91,6 +91,11 @@ private:
     /// JobOptions parameter denoting whether or not to apply edge effects
     /// according to the position of MC hits.
     bool m_edge_effect;
+
+    /// Slope of the linear function used to estimate the edge effect
+    double m_edge_slope;
+    /// y-intercept of the linear function used to estimate the edge effect
+    double m_edge_intercept;
 };
 
 #endif

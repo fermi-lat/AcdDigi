@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.11 2002/09/09 19:43:50 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.12 2002/09/27 19:39:08 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -45,7 +45,7 @@ Algorithm(name, pSvcLocator) {
 
     declareProperty("applyPoisson", m_apply_poisson=true);
 
-    declareProperty("applyGaussianNoise", m_apply_noise=false);
+    declareProperty("applyGaussianNoise", m_apply_noise=true);
 
     declareProperty("edgeEffect", m_edge_effect=true);
 }
@@ -280,6 +280,10 @@ void AcdDigiAlg::getParameters() {
 
     m_max_edge_dist = xmlFilePtr.getDouble("edge_effects", "max_edge_dist", 20.0);
 
+    m_edge_slope = xmlFilePtr.getDouble("edge_effects", "edge_slope", 0.01);
+
+    m_edge_intercept = xmlFilePtr.getDouble("edge_effects", "edge_intercept", 0.8);
+
     return;
 }
 
@@ -333,7 +337,7 @@ double AcdDigiAlg::edgeEffect(const Event::McPositionHit *hit)  {
     
     // Apply edge correction if within m_max_edge_dist (mm) of the edge
     if (dist < m_max_edge_dist) {
-        return ( (0.1*dist + 0.8) * hit->depositedEnergy() );   
+        return ( (m_edge_slope*dist + m_edge_intercept) * hit->depositedEnergy() );   
     } else {
         return hit->depositedEnergy();
     }
