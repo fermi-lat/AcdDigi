@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Fri Jul 26 10:53:29 PDT 2002
+AcdDigi/src/test
+
+Modified Files:
+	jobOptions.txt ReadDigi.cxx 
+Added Files:
+	TestAcdDigiUtil.cxx 
+Log Message:
+add new test for new AcdDigiUtil class
+    *
+------------------------------------------------------------
 User: heather  Fri Jul 26 10:52:39 PDT 2002
 AcdDigi/src/Dll
 
