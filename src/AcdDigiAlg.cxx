@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.14 2002/12/17 21:36:06 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.15 2002/12/30 20:52:40 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -79,7 +79,8 @@ StatusCode AcdDigiAlg::initialize() {
     m_tiles.setPrefix(m_glastDetSvc->getIDPrefix());
     
     m_glastDetSvc->accept(m_tiles);
-    log << MSG::INFO << "will add noise to "<< m_tiles.size() << " ACD tiles, ids from "
+    if (m_tiles.size() > 0) 
+        log << MSG::INFO << "will add noise to "<< m_tiles.size() << " ACD tiles, ids from "
         << m_tiles.front().name() << " to " << m_tiles.back().name() << endreq;
 
     return StatusCode::SUCCESS;
