@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Jul 29 13:51:56 PDT 2002
+AcdDigi/AcdDigi
+
+Removed Files:
+	AcdDigiUtil.h 
+Log Message:
+make header private
+    *
+------------------------------------------------------------
 User: heather  Fri Jul 26 10:53:29 PDT 2002
 AcdDigi/src/test
 
