@@ -1,0 +1,25 @@
+------------------------------------------------------------
+User: heather  Thu May 23 10:53:37 PDT 2002
+AcdDigi
+
+Log Message:
+initial import of AcdDigi package
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0r0
+		
+N AcdDigi/.cvsignore
+N AcdDigi/cmt/requirements
+N AcdDigi/cmt/.cvsignore
+N AcdDigi/src/mainpage.h
+N AcdDigi/src/AcdDigiAlg.h
+N AcdDigi/src/AcdDigiAlg.cxx
+N AcdDigi/src/Dll/AcdDigi_dll.cxx
+N AcdDigi/src/Dll/AcdDigi_load.cxx
+N AcdDigi/doc/release.notes
+
+No conflicts created by this import
+
+    *
