@@ -23,7 +23,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.9 2002/10/21 18:20:26 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.10 2002/12/17 21:36:06 heather Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -108,18 +108,16 @@ private:
     /// y-intercept of the linear function used to estimate the edge effect
     double m_edge_intercept;
 
-    std::map<const idents::AcdId, double> m_energyDepMap;
+    std::map<idents::AcdId, double> m_energyDepMap;
+    std::map<idents::AcdId, double> m_pmtA_toFullScaleMap;
+    std::map<idents::AcdId, double> m_pmtA_phaMipsMap;
+    std::map<idents::AcdId, double> m_pmtA_vetoMipsMap;
+    std::map<idents::AcdId, double> m_pmtA_cnoMipsMap;
 
-    std::map<const idents::AcdId, double> m_pmtA_toFullScaleMap;
-    std::map<const idents::AcdId, double> m_pmtA_phaMipsMap;
-    std::map<const idents::AcdId, double> m_pmtA_vetoMipsMap;
-    std::map<const idents::AcdId, double> m_pmtA_cnoMipsMap;
-
-    std::map<const idents::AcdId, double> m_pmtB_toFullScaleMap;
-    std::map<const idents::AcdId, double> m_pmtB_phaMipsMap;
-    std::map<const idents::AcdId, double> m_pmtB_vetoMipsMap;
-    std::map<const idents::AcdId, double> m_pmtB_cnoMipsMap;
-
+    std::map<idents::AcdId, double> m_pmtB_toFullScaleMap;
+    std::map<idents::AcdId, double> m_pmtB_phaMipsMap;
+    std::map<idents::AcdId, double> m_pmtB_vetoMipsMap;
+    std::map<idents::AcdId, double> m_pmtB_cnoMipsMap;
 
 };
 
