@@ -14,7 +14,7 @@
 * @brief Utility class that defines the methods used for ACD digitization.
 * 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.3 2002/09/27 19:39:08 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.4 2002/10/30 21:23:38 heather Exp $
 */
 
 class AcdDigiUtil  {
@@ -89,6 +89,7 @@ private:
     
     /// Global ratio of photoelectrons to mips
     static unsigned short m_mean_pe_per_mip;
+    static unsigned short m_mean_pe_per_mip_ribbon;
     
     /// number of MIPs tha correspond to full scale PHA
     static double m_mips_full_scale;
