@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Oct 21 11:21:06 PDT 2002
+AcdDigi/xml
+
+Modified Files:
+	acdDigi.xml 
+Log Message:
+set edge effect linear function via input XML file
+    *
+------------------------------------------------------------
 User: heather  Mon Oct 21 11:20:26 PDT 2002
 AcdDigi/src
 
