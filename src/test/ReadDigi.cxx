@@ -1,4 +1,4 @@
-#define GlastDigi_ReadDigi_CPP 
+#define AcdDigi_ReadDigi_CPP 
 
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -14,7 +14,7 @@
 
 /** @class ReadDigi.cpp
  * @brief AcdDigi Test algorithm
- * $Header$
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/ReadDigi.cxx,v 1.1 2002/06/05 13:20:55 heather Exp $
  */
 
 class ReadDigi : public Algorithm {
