@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Sep  9 09:43:58 PDT 2002
+AcdDigi/xml
+
+Modified Files:
+	acdDigi.xml 
+Log Message:
+remove 2 unused parameters
+    *
+------------------------------------------------------------
 User: heather  Mon Sep  9 09:43:23 PDT 2002
 AcdDigi/src/test
 
