@@ -20,7 +20,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.6 2002/09/04 20:25:22 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.7 2002/09/09 19:43:50 heather Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -69,13 +69,13 @@ private:
     unsigned short m_mean_pe_per_mip;
     
     /// number of MIPs tha correspond to full scale PHA
-    float m_mips_full_scale;
+    double m_mips_full_scale;
     
     /// MeV per MIP
-    float m_mev_per_mip;
+    double m_mev_per_mip;
 
     /// Distance (mm) cutoff for applying edge effects
-    float m_max_edge_dist;
+    double m_max_edge_dist;
     
     /// JobOptions parameter denoting whether or not to perform auto 
     /// calibration to determine the number of MIPs for full scale PHA
