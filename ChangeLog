@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: heather  Fri Aug  9 12:15:46 PDT 2002
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h mainpage.h 
+Added Files:
+	AcdDigiMcIntHitAlg.cxx AcdDigiMcIntHitAlg.h 
+Log Message:
+update main AcdDigiAlg to use McPositionHits
+and introduce optional edge effect code
+Maintain old alg. which used McIntegratingHits
+    *
+------------------------------------------------------------
 User: heather  Fri Aug  9 12:13:22 PDT 2002
 AcdDigi/src/Dll
 
