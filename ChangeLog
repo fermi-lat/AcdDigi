@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Oct 30 13:23:38 PST 2002
+AcdDigi/src
+
+Modified Files:
+	AcdDigiUtil.h AcdDigiUtil.cxx 
+Log Message:
+provide double for Poisson and interpret mean_pe_per_mip to mean per PMT
+    *
+------------------------------------------------------------
 User: heather  Wed Oct 30 13:21:32 PST 2002
 AcdDigi/doc
 
