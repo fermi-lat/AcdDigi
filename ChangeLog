@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Sep  9 12:43:50 PDT 2002
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h 
+Log Message:
+add new adjustable parameter
+    *
+------------------------------------------------------------
 User: heather  Mon Sep  9 11:45:17 PDT 2002
 AcdDigi/src
 
