@@ -7,7 +7,7 @@
 #include <map>
 #include <utility>
 
-#include "AcdDigi/AcdDigiUtil.h"
+#include "AcdDigiUtil.h"
 
 #include "idents/AcdId.h"
 
@@ -23,7 +23,7 @@
 * This algorithm does the work of creating the AcdDigi objects and storing 
 * them on the TDS.
 *
-* $Header$
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.3 2002/07/26 17:51:33 heather Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
