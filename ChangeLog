@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun  9 12:18:44 PDT 2004
+AcdDigi/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+allow low thresh to be set as JO param as well as in XML
+    *
+------------------------------------------------------------
 User: heather  Wed Jun  9 12:18:36 PDT 2004
 AcdDigi/cmt
 
