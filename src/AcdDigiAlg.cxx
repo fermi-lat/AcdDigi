@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.15 2002/12/30 20:52:40 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.16 2003/03/18 15:26:58 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -461,7 +461,7 @@ double AcdDigiAlg::edgeEffect(const Event::McPositionHit *hit)  {
     }
     else if(iFace == 2 || iFace == 4) { // Y Side Tile
         double dist_z = dZ/2. - fabs(local_x0.z());
-        double dist_x = dY/2. - fabs(local_x0.x());	                
+        double dist_x = dX/2. - fabs(local_x0.x());	                
         dist = (dist_z < dist_x) ? dist_z : dist_x;
     }
     
