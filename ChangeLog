@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Dec 30 12:52:40 PST 2002
+AcdDigi/src
+
+Modified Files:
+	AcdDigiUtil.h AcdDigiUtil.cxx AcdDigiAlg.cxx 
+Log Message:
+update to handle ribbons as well as tiles
+    *
+------------------------------------------------------------
 User: heather  Mon Dec 30 12:49:23 PST 2002
 AcdDigi/doc
 
