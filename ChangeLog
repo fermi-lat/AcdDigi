@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun  5 06:22:54 PDT 2002
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+update version and use package_test pattern
+    *
+------------------------------------------------------------
 User: heather  Wed Jun  5 06:22:01 PDT 2002
 AcdDigi/src
 
