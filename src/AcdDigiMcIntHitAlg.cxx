@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiMcIntHitAlg_CPP 
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiMcIntHitAlg.cxx,v 1.4 2002/09/09 16:42:45 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiMcIntHitAlg.cxx,v 1.5 2002/09/27 19:39:08 heather Exp $
 // Description
 // Algorithm to convert from hit data into digitization data 
 // for the ACD.  This version assumes the Monte Carlo hit data is stored
@@ -16,6 +16,7 @@
 #include "GaudiKernel/ObjectVector.h"
 
 #include "Event/TopLevel/EventModel.h"
+#include "Event/TopLevel/DigiEvent.h"
 #include "Event/TopLevel/Event.h"
 #include "Event/Digi/AcdDigi.h"
 #include "Event/MonteCarlo/McIntegratingHit.h"
@@ -89,7 +90,7 @@ StatusCode AcdDigiMcIntHitAlg::execute() {
     sc = eventSvc()->retrieveObject( EventModel::Digi::Event , pNode);
     
     if (sc.isFailure()) {
-        sc = eventSvc()->registerObject(EventModel::Digi::Event, new DataObject);
+        sc = eventSvc()->registerObject(EventModel::Digi::Event, new Event::DigiEvent);
         if( sc.isFailure() ) {
             log << MSG::ERROR << "could not register " << EventModel::Digi::Event << endreq;
             return sc;
