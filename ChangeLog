@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Wed Sep  4 13:25:23 PDT 2002
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h AcdDigiMcIntHitAlg.cxx 
+	AcdDigiMcIntHitAlg.h AcdDigiOrgAlg.cxx AcdDigiOrgAlg.h 
+	AcdDigiUtil.cxx AcdDigiUtil.h 
+Log Message:
+update documentation and use AcdId ctor which unpacks VolId
+    *
+------------------------------------------------------------
 User: heather  Wed Sep  4 13:21:38 PDT 2002
 AcdDigi/doc
 
