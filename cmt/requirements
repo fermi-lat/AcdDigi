@@ -1,6 +1,6 @@
 package AcdDigi
-version v1r3p1
-# $Id:$
+version v1r3p2
+# $Id: requirements,v 1.6 2002/09/02 20:01:25 burnett Exp $
 
 use GaudiSvc v7r*
 
