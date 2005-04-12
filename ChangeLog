@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Apr 12 10:25:57 PDT 2005
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx 
+Log Message:
+fix typo concerning CNO on B side - thanks Brian Winer
+    *
+------------------------------------------------------------
 User: heather  Tue Apr 12 10:25:46 PDT 2005
 AcdDigi/cmt
 
