@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Apr 12 10:25:34 PDT 2005
+AcdDigi/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+fix typo concerning CNO on B side - thanks Brian Winer
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r11p1, operation: add
 Package: AcdDigi
