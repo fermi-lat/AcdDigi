@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.22 2004/06/09 19:19:11 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.23 2005/01/04 22:05:14 jrb Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -239,7 +239,7 @@ StatusCode AcdDigiAlg::execute() {
         m_pmtB_vetoMipsMap[id] = pmtB_observedMips_veto;
 
         m_pmtA_cnoMipsMap[id] = pmtA_observedMips_cno;
-        m_pmtA_cnoMipsMap[id] = pmtB_observedMips_cno;
+        m_pmtB_cnoMipsMap[id] = pmtB_observedMips_cno;
         
     } // end loop over MC hits
 
