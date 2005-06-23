@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Jun 23 15:20:28 PDT 2005
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Upping requested Event version number and tagging
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r11p2, operation: add
 Package: AcdDigi
