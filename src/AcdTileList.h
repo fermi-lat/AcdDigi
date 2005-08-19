@@ -9,7 +9,7 @@
 /** @class AcdTileList
 * @brief This class uses detModel to make a list of all ACD tiles, from the names
 * @author Heather Kelly
-* $Header$
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdTileList.h,v 1.1 2002/12/17 21:36:06 heather Exp $
 */
 class AcdTileList : public IGeometry , public std::vector<idents::VolumeIdentifier> 
 
@@ -32,7 +32,7 @@ public:
     */
     virtual VisitorRet pushShape(ShapeType s, const UintVector& id, 
         std::string name, std::string material, 
-        const DoubleVector& params, VolumeType type);
+        const DoubleVector& params, VolumeType type, SenseType sense);
 
     //* called to signal end of nesting */
     virtual void popShape();

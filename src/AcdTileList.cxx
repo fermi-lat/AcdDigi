@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdTileList.cxx,v 1.1 2002/12/17 21:36:06 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdTileList.cxx,v 1.2 2003/10/10 17:28:49 heather Exp $
 // Description:
 
 #include "AcdTileList.h"
@@ -8,7 +8,7 @@ IGeometry::VisitorRet
 AcdTileList::pushShape(ShapeType s, const UintVector& idvec, 
                        std::string name, std::string material, 
                        const DoubleVector& params, 
-                       VolumeType type)
+                       VolumeType type, SenseType sense)
 {
     // concatenate the id for this node to current id.
     m_idcount.push_back(idvec.size());
@@ -31,7 +31,7 @@ AcdTileList::pushShape(ShapeType s, const UintVector& idvec,
         // will need to check to see if we found this guy already
 
         // Also check to see if the ribbons are position detectors or not
-        if (type == posSensitive) this->push_back(getId());
+        if (sense == posSensitive) this->push_back(getId());
         return AbortSubtree;
     }
 
