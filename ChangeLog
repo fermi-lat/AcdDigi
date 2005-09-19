@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Sep 19 13:03:13 PDT 2005
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+check for screw volumes in bottom side tiles
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r12p2, operation: add
 Package: AcdDigi
