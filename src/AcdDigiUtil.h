@@ -6,6 +6,7 @@
 #include "Event/Digi/AcdDigi.h"
 
 #include "idents/AcdId.h"
+#include "idents/VolumeIdentifier.h"
 
 #include "facilities/Util.h"
 #include "xmlBase/IFile.h"
@@ -14,7 +15,7 @@
 * @brief Utility class that defines the methods used for ACD digitization.
 * 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.5 2002/12/30 20:52:40 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.6 2005/01/04 22:05:14 jrb Exp $
 */
 
 class AcdDigiUtil  {
@@ -76,6 +77,9 @@ public:
     /// Returns a value sampled from a Gaussian distribution
     /// @param std_dev Standard Deviation to be  used when sampling
     static double shootGaussian(double std_dev);
+
+    static bool compareVolIds(const idents::VolumeIdentifier &tileId,
+                              const idents::VolumeIdentifier &screwId);
     
 private:
             
