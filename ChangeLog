@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Sep 19 13:06:12 PDT 2005
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdTileList.cxx AcdDigiUtil.cxx AcdDigiUtil.h 
+Log Message:
+check for screw volumes in bottom side tiles
+    *
+------------------------------------------------------------
 User: heather  Mon Sep 19 13:03:20 PDT 2005
 AcdDigi/doc
 
