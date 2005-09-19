@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiUtil_CPP 
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.8 2002/12/30 20:52:40 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.9 2005/01/04 22:05:14 jrb Exp $
 // Description
 // Some utility methods helpful for performing the ACD digitization.
 
@@ -223,4 +223,19 @@ unsigned short AcdDigiUtil::convertMipsToPha(double mips, double mipsToFullScale
     
     return static_cast<unsigned short>(std::min((double)floor(mips / mipsToFullScale * m_full_scale), (double)m_full_scale));
     
+}
+
+bool AcdDigiUtil::compareVolIds(const idents::VolumeIdentifier& tileId, 
+                                const idents::VolumeIdentifier& screwVolId) {
+
+    ///Purpose and Method:  Compare the volumeIdentfiers of a tile and a 
+    /// AcdScrewSq to see if the AcdScrewSq occurs within the given tile
+
+    if ((tileId[0] != 1) && (screwVolId[0] != 1) ) return false;
+    unsigned int i;
+    // compare the entries one by one to see if they are equal
+    for (i = 0; i<5; i++) {
+        if(tileId[i] != screwVolId[i]) return false;
+    }
+    return true;
 }
