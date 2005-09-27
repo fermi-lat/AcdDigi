@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.24 2005/04/12 17:25:57 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.25 2005/09/19 20:06:12 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -232,9 +232,9 @@ StatusCode AcdDigiAlg::execute() {
         
         double mips = util.convertMevToMips(energyMevDeposited);
                 
-        // split the signal evenly between the 2 PMTs (A and B)
-        double pmtA_mips = mips * 0.5;
-        double pmtB_mips = mips - pmtA_mips;
+        // apply the signal to the two PMT's
+        double pmtA_mips = mips;
+        double pmtB_mips = mips;
         
         // Number of photoelectrons for each PMT, A and B
         unsigned int pmtA_pe, pmtB_pe;
