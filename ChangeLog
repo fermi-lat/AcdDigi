@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Sep 27 16:18:16 PDT 2005
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+remove "splitting" of signal and subsequent factors of 2, so normalization agrees with threshold interpretation in mips
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r13, operation: add
 Package: AcdDigi
