@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.25 2005/09/19 20:06:12 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.26 2005/09/27 23:18:16 burnett Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -69,7 +69,7 @@ StatusCode AcdDigiAlg::initialize() {
     setProperties();
     log << MSG::DEBUG << "Set LowThreshold = " << m_low_threshold_mips << endreq; 
 
-	// read in the parameters from our input XML file
+    // read in the parameters from our input XML file
     util.getParameters(m_xmlFile);
 
     m_glastDetSvc = 0;
@@ -86,7 +86,7 @@ StatusCode AcdDigiAlg::initialize() {
     // get the list of layers, to be used to add noise to otherwise empty layers
     m_tiles.setPrefix(m_glastDetSvc->getIDPrefix());
     
-	// Find all the ACD detectors in our geometry
+    // Find all the ACD detectors in our geometry
     m_glastDetSvc->accept(m_tiles);
     if (m_tiles.size() > 0) 
         log << MSG::INFO << "Located  "<< m_tiles.size() << " ACD volumes, ids from "
@@ -365,6 +365,7 @@ StatusCode AcdDigiAlg::execute() {
 
 
 StatusCode AcdDigiAlg::finalize() {
+    util.dumpMeanPePerPmt();
     return StatusCode::SUCCESS;
 }
 

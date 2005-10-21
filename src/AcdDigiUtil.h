@@ -11,11 +11,13 @@
 #include "facilities/Util.h"
 #include "xmlBase/IFile.h"
 
+#include "AcdTileList.h"
+
 /** @class AcdDigiUtil
 * @brief Utility class that defines the methods used for ACD digitization.
 * 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.6 2005/01/04 22:05:14 jrb Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.7 2005/09/19 20:06:12 heather Exp $
 */
 
 class AcdDigiUtil  {
@@ -28,6 +30,8 @@ public:
 
     /// Read data from the input XML file
     void getParameters(const std::string &xmlFile);
+
+    void dumpMeanPePerPmt() const;
 
     /// Convert from energy (MeV) to MIPs
     static double convertMevToMips(double energy_mev);
@@ -102,9 +106,10 @@ private:
     static double m_mev_per_mip;
      
     /// store AcdId specific number of photoelectrons per mip as they are read in
-    static std::map< unsigned int, std::pair<int, int> > m_pePerMipMap;
+    static std::map< unsigned int, std::pair<float, float> > m_pePerMipMap;
     /// store AcdId specific gain values as they are read in
     static std::map< unsigned int, std::pair<double, double> > m_gainMap;
+
 };
 
 #endif
