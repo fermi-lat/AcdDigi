@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Oct 21 15:49:21 PDT 2005
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch to completely remove AcdDigiMcIntAlg
+    *
+------------------------------------------------------------
 User: heather  Fri Oct 21 15:46:09 PDT 2005
 AcdDigi/doc
 
