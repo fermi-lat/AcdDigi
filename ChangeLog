@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Oct 21 15:49:30 PDT 2005
+AcdDigi/src/Dll
+
+Modified Files:
+	AcdDigi_load.cxx 
+Log Message:
+patch to completely remove AcdDigiMcIntAlg
+    *
+------------------------------------------------------------
 User: heather  Fri Oct 21 15:49:21 PDT 2005
 AcdDigi/cmt
 
