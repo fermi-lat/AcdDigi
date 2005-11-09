@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Nov  9 13:26:49 PST 2005
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiUtil.cxx AcdDigiUtil.h 
+Log Message:
+fix up logging of mean pe per pmt
+    *
+------------------------------------------------------------
 User: heather  Wed Nov  9 13:23:42 PST 2005
 AcdDigi/doc
 
