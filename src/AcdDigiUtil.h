@@ -17,7 +17,7 @@
 * @brief Utility class that defines the methods used for ACD digitization.
 * 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.7 2005/09/19 20:06:12 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.8 2005/10/21 19:16:20 heather Exp $
 */
 
 class AcdDigiUtil  {
@@ -31,7 +31,7 @@ public:
     /// Read data from the input XML file
     void getParameters(const std::string &xmlFile);
 
-    void dumpMeanPePerPmt() const;
+    std::ostream& dumpMeanPePerPmt(std::ostream& s) const;
 
     /// Convert from energy (MeV) to MIPs
     static double convertMevToMips(double energy_mev);
