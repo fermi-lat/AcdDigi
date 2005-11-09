@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.26 2005/09/27 23:18:16 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.27 2005/10/21 19:16:20 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -365,7 +365,10 @@ StatusCode AcdDigiAlg::execute() {
 
 
 StatusCode AcdDigiAlg::finalize() {
-    util.dumpMeanPePerPmt();
+    MsgStream   log( msgSvc(), name() );
+    log << MSG::DEBUG;
+    if (log.isActive()) util.dumpMeanPePerPmt(log.stream());
+    log << endreq;
     return StatusCode::SUCCESS;
 }
 
