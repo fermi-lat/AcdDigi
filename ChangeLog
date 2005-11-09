@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Nov  9 13:23:38 PST 2005
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix up printing of mean PE per PMT
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r14p1, operation: add
 Package: AcdDigi
