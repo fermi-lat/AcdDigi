@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Nov  9 13:50:43 PST 2005
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx 
+Log Message:
+fixed up edge effects for faces 1 and 3 - thanks Alex M
+    *
+------------------------------------------------------------
 User: heather  Wed Nov  9 13:50:25 PST 2005
 AcdDigi/doc
 
