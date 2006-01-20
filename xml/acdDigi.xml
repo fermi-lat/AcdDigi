@@ -15,12 +15,12 @@
         Do not modify and check in this file without permission!
         Note that the text in the item field cannot have direct ampersands of brackets!
   -->
-<acdDigi cvs_Header="$Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/xml/acdDigi.xml,v 1.7 2002/12/31 18:43:10 heather Exp $"
-         cvs_Revision="$Revision: 1.7 $">
+<acdDigi cvs_Header="$Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/xml/acdDigi.xml,v 1.8 2005/10/21 19:16:30 heather Exp $"
+         cvs_Revision="$Revision: 1.8 $">
 
     <section name="thresholds">  ACD thresholds
 	<item name="low_threshold_mips"     value="0.1"> MIP threshold enables PHA</item>
-        <item name="veto_threshold_mips"      value="0.3"> MIP nominal veto </item>
+        <item name="veto_threshold_mips"      value="0.2"> MIP nominal veto </item>
         <item name="high_threshold_mips" value="10.5"> MIP threshold CNO </item>
     </section>
 
