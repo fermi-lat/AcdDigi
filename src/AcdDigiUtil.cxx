@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiUtil_CPP 
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.12 2005/10/21 19:16:20 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.13 2005/11/09 21:26:49 heather Exp $
 // Description
 // Some utility methods helpful for performing the ACD digitization.
 
@@ -172,7 +172,7 @@ long AcdDigiUtil::shootPoisson(double pmtPhotoElectrons) {
     // Input:
     // Output: 
     
-    return RandPoisson::shoot(pmtPhotoElectrons);
+    return CLHEP::RandPoisson::shoot(pmtPhotoElectrons);
 }
 
 double AcdDigiUtil::shootGaussian(double std_dev) {
@@ -181,7 +181,7 @@ double AcdDigiUtil::shootGaussian(double std_dev) {
     // Input:  Standard Deviation
     // Output:  A value obtained from the the Gaussian distribution.
     
-    return RandGauss::shoot(0.0, std_dev);
+    return CLHEP::RandGauss::shoot(0.0, std_dev);
 }
 
 void AcdDigiUtil::calcMipsToFullScale(const idents::AcdId& id, 
