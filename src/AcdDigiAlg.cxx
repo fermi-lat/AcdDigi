@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.28 2005/11/09 21:26:49 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.29.4.1 2006/01/31 17:39:16 usher Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -21,6 +21,7 @@
 
 #include "CLHEP/Random/RandPoisson.h"
 #include "CLHEP/Random/RandGauss.h"
+#include "CLHEP/Geometry/Transform3D.h"
 
 // for min and floor functions
 #include <algorithm>
@@ -109,7 +110,7 @@ StatusCode AcdDigiAlg::initialize() {
         log << MSG::DEBUG << "Failed to retrieve Shape by Id" << endreq;
         return sc;
     }
-    HepTransform3D transform;
+    HepGeom::Transform3D transform;
     sc = m_glastDetSvc->getTransform3DByID(volId, &transform);
     if (sc.isFailure() ) {
         log << MSG::WARNING << "Failed to get transformation" << endreq;
