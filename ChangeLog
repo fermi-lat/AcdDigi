@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Mar 27 21:44:05 PST 2006
+AcdDigi/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+fix up unit test options
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r15, operation: add
 Package: AcdDigi
