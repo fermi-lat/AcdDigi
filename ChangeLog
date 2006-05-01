@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon May  1 13:38:49 PDT 2006
+AcdDigi/cmt
+
+Modified Files:
+      Tag: EM-v5r070305p1
+	requirements 
+Log Message:
+go to 0.3 and 20 MIPs for veto and cno thresholds by default
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r15p1, operation: add
 Package: AcdDigi
