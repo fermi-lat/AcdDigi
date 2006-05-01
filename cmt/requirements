@@ -1,7 +1,7 @@
 package AcdDigi
-version v1r14p2em2
+version v1r14p2em3
 author Heather Kelly <heather@milkyway.gsfc.nasa.gov>
-# $Id: requirements,v 1.36 2005/11/09 21:23:38 heather Exp $
+# $Id: requirements,v 1.36.2.1 2006/01/20 19:44:26 heather Exp $
 
 use GlastSvc v9r*
 use Event v11r*
