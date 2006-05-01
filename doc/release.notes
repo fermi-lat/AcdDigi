@@ -3,7 +3,10 @@
  Coordinator:H.Kelly
  @verbatim
 
- v1r14p2em2 20-Jan-2005 HMK Set veto threshold to 0.1 MIP temporarily for I&T
+ v1r14p2em3 01-May-2006 HMK Set veto threshold hold back to 0.3 MIP
+            and update CNO threshold to 20 MIPs as it probably always should
+            have been
+ v1r14p2em2 20-Jan-2006 HMK Set veto threshold to 0.1 MIP temporarily for I&T
  v1r14p2 09-Nov-2005 HMK Fix up printing of Mean PE per PMT values
                      Fixed up edge effects for Face 1 and 3
  v1r14p1 21-Oct-2005 HMK Patch to completely remove AcdDigiMcIntAlg.cxx
