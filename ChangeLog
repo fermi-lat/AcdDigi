@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed May 10 10:33:13 PDT 2006
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+initial check in to handle curved tiles
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r14p2em3, operation: add
 Package: AcdDigi
