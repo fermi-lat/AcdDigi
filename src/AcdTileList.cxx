@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdTileList.cxx,v 1.3 2005/08/19 19:15:55 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdTileList.cxx,v 1.4 2005/09/19 20:06:12 heather Exp $
 // Description:
 
 #include "AcdTileList.h"
@@ -29,9 +29,6 @@ AcdTileList::pushShape(ShapeType s, const UintVector& idvec,
         }
         this->push_back(getId());
         return AbortSubtree;
-    } else if (name.substr(0,10) == "ACDScrewSq") {
-        this->push_back(getId());
-        return AbortSubtree; 
     } else if (name.substr(0,10) == "sideRibbon" ) {
         if (name.substr(0,11) == "sideRibbons" ) return More;
         // ignore top ribbons - we just want a count of whole ribbons not the segments
@@ -41,6 +38,9 @@ AcdTileList::pushShape(ShapeType s, const UintVector& idvec,
         // Also check to see if the ribbons are position detectors or not
         if (sense == posSensitive) this->push_back(getId());
         return AbortSubtree;
+    } else if (name.substr(0,10) == "ribbonBent" ) {
+        // pick up the extra bits of ribbon added for the curved tiles
+        if (sense == posSensitive) this->push_back(getId());
     }
 
     // otherwise continue
