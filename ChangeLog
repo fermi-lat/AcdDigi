@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed May 10 14:31:04 PDT 2006
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h 
+Log Message:
+use idents method to get bent volIds
+    *
+------------------------------------------------------------
 User: heather  Wed May 10 10:33:14 PDT 2006
 AcdDigi/xml
 
