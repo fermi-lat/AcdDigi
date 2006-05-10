@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Wed May 10 10:33:14 PDT 2006
+AcdDigi/xml
+
+Modified Files:
+	acdDigi.xml 
+Log Message:
+initial check in to handle curved tiles
+    *
+------------------------------------------------------------
+User: heather  Wed May 10 10:33:14 PDT 2006
 AcdDigi/src
 
 Modified Files:
