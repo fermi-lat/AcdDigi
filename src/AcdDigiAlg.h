@@ -23,7 +23,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.13 2005/01/04 22:05:14 jrb Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.14 2006/05/10 17:33:14 heather Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -49,9 +49,6 @@ private:
     /// Adjusts the deposited energy recorded in an ACD volume 
     /// based on the location of the hit
     double edgeEffect(const Event::McPositionHit *hit);
-
-    void createVolId(const idents::VolumeIdentifier &orgVolId,
-                     idents::VolumeIdentifier &newVolId, bool bent=false);
     
     /// Default value read in from XML file
     double m_low_threshold_mips_xml;
