@@ -17,7 +17,7 @@
 * @brief Utility class that defines the methods used for ACD digitization.
 * 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.8 2005/10/21 19:16:20 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.9 2005/11/09 21:26:49 heather Exp $
 */
 
 class AcdDigiUtil  {
@@ -72,7 +72,8 @@ public:
     
     /// Converts MIPs to a PHA value - if the number of MIPs is offscale, returns
     /// the fullscale value
-    static unsigned short convertMipsToPha(double mips, double mipsToFullScale);
+    static unsigned short convertMipsToPha(double mips, double mipsToFullScale, 
+					   Event::AcdDigi::Range& range);
 
     /// Returns a value sampled from a Poisson distribution
     /// @param pmtPhotoElectrons is the mean of the Poisson distribution
