@@ -1,7 +1,7 @@
 #define AcdDigi_TestAcdDigiAlg_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.3 2002/09/09 16:45:55 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.4 2002/09/27 19:40:06 heather Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -24,7 +24,7 @@
  *
  * Exercise all of AcdDigiUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.3 2002/09/09 16:45:55 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.4 2002/09/27 19:40:06 heather Exp $
  */
 
 class TestAcdDigiAlg : public Algorithm {
@@ -117,8 +117,10 @@ StatusCode TestAcdDigiAlg::execute() {
     log << MSG::DEBUG << "mipsToFullScaleA " << mipsToFullScaleA << endreq;
     log << MSG::DEBUG << "mipsToFullScaleB " << mipsToFullScaleB << endreq;
 
-    unsigned short pmtA_pha = m_util.convertMipsToPha(pmtA_mips, mipsToFullScaleA);
-    unsigned short pmtB_pha = m_util.convertMipsToPha(pmtB_mips, mipsToFullScaleB);
+    Event::AcdDigi::Range rangeArr[2] = { Event::AcdDigi::LOW, Event::AcdDigi::LOW };
+
+    unsigned short pmtA_pha = m_util.convertMipsToPha(pmtA_mips, mipsToFullScaleA, rangeArr[0]);
+    unsigned short pmtB_pha = m_util.convertMipsToPha(pmtB_mips, mipsToFullScaleB, rangeArr[1]);
 
     log << MSG::DEBUG << "pmtA_pha " << pmtA_pha << endreq;
     log << MSG::DEBUG << "pmtB_pha " << pmtB_pha << endreq;
