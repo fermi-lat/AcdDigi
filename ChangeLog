@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Tue Sep 19 17:02:53 PDT 2006
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiUtil.cxx AcdDigiUtil.h 
+Log Message:
+Added support for high range in AcdDigiAlg
+    *
+------------------------------------------------------------
+User: echarles  Tue Sep 19 17:02:53 PDT 2006
 AcdDigi/doc
 
 Modified Files:
