@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Oct  2 10:45:09 PDT 2006
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx 
+Log Message:
+change cout statement to Gaudi log
+    *
+------------------------------------------------------------
+User: heather  Mon Oct  2 10:45:09 PDT 2006
 AcdDigi/doc
 
 Modified Files:
