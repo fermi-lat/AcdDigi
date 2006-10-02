@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.32 2006/05/10 21:31:04 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.33 2006/09/20 00:02:53 echarles Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -365,7 +365,7 @@ StatusCode AcdDigiAlg::execute() {
 				     m_energyDepMap[tileId], phaArr, 
 				     vetoArr, lowArr, highArr);
 
-	std::cout << "making ranges " << rangeArr[0] << ' ' << rangeArr[1] << std::endl;
+    log << MSG::DEBUG << "making ranges " << rangeArr[0] << ' ' << rangeArr[1] << endreq;
 	aDigi->setRanges(rangeArr);
         digiCol->push_back( aDigi );
 
