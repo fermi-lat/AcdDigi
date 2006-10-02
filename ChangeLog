@@ -1,4 +1,36 @@
 ------------------------------------------------------------
+TAG
+Tag name: v1r18p1, operation: add
+Package: AcdDigi
+User: heather  Mon Oct  2 10:45:38 2006
+Files:
+  AcdDigi/.cvsignore  1.3
+  AcdDigi/ChangeLog  1.194
+  AcdDigi/cmt/.cvsignore  1.1.1.1
+  AcdDigi/cmt/requirements  1.42
+  AcdDigi/doc/release.notes  1.44
+  AcdDigi/doc/images/AcdDigiDiagram.gif  1.1
+  AcdDigi/src/AcdTileList.cxx  1.5
+  AcdDigi/src/AcdDigiOrgAlg.cxx  1.5
+  AcdDigi/src/AcdDigiRandom.cxx  1.1
+  AcdDigi/src/AcdTileList.h  1.2
+  AcdDigi/src/mainpage.h  1.7
+  AcdDigi/src/AcdDigiAlg.cxx  1.34
+  AcdDigi/src/AcdDigiUtil.h  1.10
+  AcdDigi/src/AcdDigiAlg.h  1.15
+  AcdDigi/src/AcdDigiUtil.cxx  1.15
+  AcdDigi/src/AcdDigiOrgAlg.h  1.3
+  AcdDigi/src/Dll/AcdDigi_dll.cxx  1.2
+  AcdDigi/src/Dll/AcdDigi_load.cxx  1.6
+  AcdDigi/src/test/jobOptions.txt  1.5
+  AcdDigi/src/test/ReadDigi.cxx  1.3
+  AcdDigi/src/test/util/jobOptions.txt  1.1
+  AcdDigi/src/test/util/TestAcdDigiAlg.cxx  1.5
+  AcdDigi/xml/acdDigiOrg.xml  1.1
+  AcdDigi/xml/acdDigi.xml  1.10
+
+    *
+------------------------------------------------------------
 User: heather  Mon Oct  2 10:45:09 PDT 2006
 AcdDigi/src
 
