@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Oct  2 10:45:09 PDT 2006
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+change cout statement to Gaudi log
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r18, operation: add
 Package: AcdDigi
