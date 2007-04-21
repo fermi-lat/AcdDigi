@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Apr 20 19:13:42 PDT 2007
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+store true MC energies on TDS
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r18p2, operation: add
 Package: AcdDigi
