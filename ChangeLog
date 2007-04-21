@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Fri Apr 20 19:13:42 PDT 2007
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx 
+Log Message:
+store true MC energies on TDS
+    *
+------------------------------------------------------------
+User: heather  Fri Apr 20 19:13:42 PDT 2007
 AcdDigi/doc
 
 Modified Files:
