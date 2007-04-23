@@ -1,7 +1,7 @@
 #define AcdDigi_TestAcdDigiAlg_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.4 2002/09/27 19:40:06 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.5 2006/09/20 00:02:53 echarles Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -24,7 +24,7 @@
  *
  * Exercise all of AcdDigiUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.4 2002/09/27 19:40:06 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.5 2006/09/20 00:02:53 echarles Exp $
  */
 
 class TestAcdDigiAlg : public Algorithm {
@@ -93,7 +93,7 @@ StatusCode TestAcdDigiAlg::execute() {
 
     idents::AcdId id(0, 1, 1, 1);
 
-    unsigned int pmtA_pe, pmtB_pe;
+    double pmtA_pe, pmtB_pe;
 
     m_util.convertMipsToPhotoElectrons(id, pmtA_mips, pmtA_pe,
         pmtB_mips, pmtB_pe);
