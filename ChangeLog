@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: lreyes  Mon Apr 23 12:19:11 PDT 2007
+AcdDigi/src/test/util
+
+Modified Files:
+	TestAcdDigiAlg.cxx 
+Log Message:
+New calculation of Poisson fluctuations in number of photoelectrons
+    *
+------------------------------------------------------------
+User: lreyes  Mon Apr 23 12:19:11 PDT 2007
 AcdDigi/src
 
 Modified Files:
