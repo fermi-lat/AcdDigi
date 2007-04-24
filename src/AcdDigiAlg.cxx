@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.35 2007/04/21 02:13:42 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.36 2007/04/23 19:19:11 lreyes Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -252,7 +252,8 @@ StatusCode AcdDigiAlg::execute() {
         
         // Apply Poisson fluctuations to the number of pe's for each PMT
         if (m_apply_poisson) {
-            for(int i=0; i<poisson_steps; i++){
+            int i;
+            for(i=0; i<poisson_steps; i++){
                 pmtA_pe = util.shootPoisson(pmtA_pe);
                 pmtB_pe = util.shootPoisson(pmtB_pe);
                 pmtA_pe*=gain;
