@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Jun 11 07:27:18 PDT 2007
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+handle changes in segmentation and naming of side ribbons
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r20, operation: add
 Package: AcdDigi
