@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.36 2007/04/23 19:19:11 lreyes Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.37 2007/04/24 16:50:06 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -137,7 +137,7 @@ StatusCode AcdDigiAlg::initialize() {
     }
 
     log << MSG::INFO << "Located  " << m_acdId_volCount.size() 
-        << " ACD detectors" << endreq;
+        << " ACD detectors (includes bent tile volumes)" << endreq;
 
     return StatusCode::SUCCESS;
 }
