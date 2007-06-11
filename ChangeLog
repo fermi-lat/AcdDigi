@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Jun 11 07:27:18 PDT 2007
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdTileList.cxx 
+Log Message:
+handle changes in segmentation and naming of side ribbons
+    *
+------------------------------------------------------------
+User: heather  Mon Jun 11 07:27:18 PDT 2007
 AcdDigi/cmt
 
 Modified Files:
