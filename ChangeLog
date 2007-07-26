@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Jul 26 07:00:16 PDT 2007
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch for volume name change associated with new screws
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r21, operation: add
 Package: AcdDigi
