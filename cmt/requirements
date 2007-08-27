@@ -1,14 +1,16 @@
 package AcdDigi
-version v1r21p1
+version v2r0
 author Heather Kelly <heather@milkyway.gsfc.nasa.gov>
-# $Id: requirements,v 1.46 2007/06/11 14:27:18 heather Exp $
+# $Id: requirements,v 1.47 2007/07/26 14:00:15 heather Exp $
 
 use GlastSvc v9r*
 use Event v11r*
 
 use facilities v2r*
 
-use xmlBase v5r*         
+use xmlBase v5r*      
+
+use AcdUtil v*   
 
 apply_pattern packageShr
 
