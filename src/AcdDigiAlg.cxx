@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.38 2007/06/11 14:27:18 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.39 2007/08/27 13:59:49 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -562,11 +562,12 @@ void AcdDigiAlg::addNoise()  {
             util.calcMipsToFullScale(tileId, m_pmtA_phaMipsMap[tileId], 
                 pmtA_pe, pmtA_mipsToFullScale, m_pmtB_phaMipsMap[tileId], 
                 pmtB_pe, pmtB_mipsToFullScale);
+            m_pmtA_toFullScaleMap[tileId] = pmtA_mipsToFullScale;
+            m_pmtB_toFullScaleMap[tileId] = pmtB_mipsToFullScale;
+
         } else {
-            util.applyGains(tileId, pmtA_mipsToFullScale, pmtB_mipsToFullScale);
+//            util.applyGains(tileId, pmtA_mipsToFullScale, pmtB_mipsToFullScale);
         }
-        m_pmtA_toFullScaleMap[tileId] = pmtA_mipsToFullScale;
-        m_pmtB_toFullScaleMap[tileId] = pmtB_mipsToFullScale;
 
         if (m_energyDepMap.find(tileId) == m_energyDepMap.end())
             m_energyDepMap[tileId] = 0.0;
