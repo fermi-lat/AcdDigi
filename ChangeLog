@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Aug 27 06:59:49 PDT 2007
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h 
+Log Message:
+check in updates to use calibration svc
+    *
+------------------------------------------------------------
+User: heather  Mon Aug 27 06:59:49 PDT 2007
 AcdDigi/cmt
 
 Modified Files:
