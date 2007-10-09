@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Oct  9 11:50:38 PDT 2007
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Use AcdUtil::AcdCalibFuncs for conversion to ensure that sim and recon use same conversion functions. (But maybe not same calibration constants.)  Get (more) calibrations from AcdSimCalibSvc.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r0, operation: add
 Package: AcdDigi
