@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Tue Oct  9 11:50:39 PDT 2007
+AcdDigi/src/test/util
+
+Modified Files:
+	TestAcdDigiAlg.cxx jobOptions.txt 
+Log Message:
+Use AcdUtil::AcdCalibFuncs for conversion to ensure that sim and recon use same conversion functions. (But maybe not same calibration constants.)  Get (more) calibrations from AcdSimCalibSvc.
+    *
+------------------------------------------------------------
+User: echarles  Tue Oct  9 11:50:39 PDT 2007
 AcdDigi/src
 
 Modified Files:
