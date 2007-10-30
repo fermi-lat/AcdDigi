@@ -1,7 +1,7 @@
 package AcdDigi
-version v3r0
+version v3r1
 author Heather Kelly <heather@milkyway.gsfc.nasa.gov>
-# $Id: requirements,v 1.48 2007/08/27 13:59:49 heather Exp $
+# $Id: requirements,v 1.49 2007/10/09 18:50:38 echarles Exp $
 
 use GlastSvc v9r*
 use Event v11r*
@@ -17,6 +17,8 @@ apply_pattern packageShr
 
 #=============================================================
 private
+
+use gr_app v*
 
 apply_pattern package_headers
 macro xml_source "" WIN32 "-s=../xml *.xml"
