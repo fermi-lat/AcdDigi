@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Mon Nov  5 11:18:33 PST 2007
+AcdDigi/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Fix memory leak in AcdSimCalibSvc
+    *
+------------------------------------------------------------
+User: echarles  Mon Nov  5 11:18:33 PST 2007
 AcdDigi/cmt
 
 Modified Files:
