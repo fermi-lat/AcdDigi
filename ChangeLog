@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Nov  5 11:18:33 PST 2007
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fix memory leak in AcdSimCalibSvc
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r1, operation: add
 Package: AcdDigi
