@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Nov 21 14:23:11 PST 2007
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Make AcdDigiUtil::tileEdgeEffect compatible with unrotated tiles
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r1p1, operation: add
 Package: AcdDigi
