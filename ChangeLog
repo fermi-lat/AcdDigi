@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Wed Nov 21 14:23:11 PST 2007
+AcdDigi/src
+
+Modified Files:
+	AcdDigiUtil.cxx 
+Log Message:
+Make AcdDigiUtil::tileEdgeEffect compatible with unrotated tiles
+    *
+------------------------------------------------------------
+User: echarles  Wed Nov 21 14:23:11 PST 2007
 AcdDigi/doc
 
 Modified Files:
