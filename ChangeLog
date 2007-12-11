@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Dec 11 15:36:41 PST 2007
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx 
+Log Message:
+Fix bug in call to Event::AcdDigi object c'tor that swapped veto and ZS bits
+    *
+------------------------------------------------------------
 User: echarles  Tue Dec 11 15:36:40 PST 2007
 AcdDigi/doc
 
