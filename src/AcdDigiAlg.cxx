@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.40 2007/08/27 19:26:18 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.41 2007/10/09 18:50:38 echarles Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -301,7 +301,7 @@ StatusCode AcdDigiAlg::makeDigis(const std::map<idents::AcdId, std::pair<double,
     if ( makeDigi ) {
       Event::AcdDigi* aDigi = new Event::AcdDigi(acdId, volId,
 						 m_energyDepMap[acdId], phaArr, 
-						 phaThreshArr, vetoArr, highArr);
+						 vetoArr, phaThreshArr, highArr);
       aDigi->setRanges(rangeArr);
       digiCol.push_back( aDigi );
       log << MSG::DEBUG << "PMT: " << acdId.id()
