@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Fri Dec 21 14:31:39 PST 2007
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiUtil.cxx AcdDigiUtil.h 
+Log Message:
+Set accept map bit for all high range readouts
+    *
+------------------------------------------------------------
+User: echarles  Fri Dec 21 14:31:39 PST 2007
 AcdDigi/doc
 
 Modified Files:
