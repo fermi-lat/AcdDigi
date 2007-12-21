@@ -42,7 +42,7 @@ namespace Event {
 * @brief Utility class that defines the methods used for ACD digitization.
 * 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.11 2007/04/23 19:19:11 lreyes Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.12 2007/10/09 18:50:38 echarles Exp $
 */
 
 
@@ -195,9 +195,9 @@ public:
 
   /// Checks all the various thresholds
   StatusCode checkThresholds(const idents::AcdId& id, const double mipEquiv[2],
-			     const unsigned short phaArr[2], bool applyNoise, 
-			     bool& makeDigi, bool phaThreshArr[2], bool vetoArr[2],  bool highArr[2]);			     
-  
+			     const unsigned short phaArr[2], const bool rangeArr[2], bool applyNoise, 
+			     bool& makeDigi, 
+			     bool phaThreshArr[2], bool vetoArr[2], bool highArr[2]);  
   
 protected:
 
