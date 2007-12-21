@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.41 2007/10/09 18:50:38 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.42 2007/12/11 23:36:40 echarles Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -295,7 +295,7 @@ StatusCode AcdDigiAlg::makeDigis(const std::map<idents::AcdId, std::pair<double,
       if ( sc.isFailure() ) return sc;	
     }
 
-    sc = m_util.checkThresholds(acdId,mipsPmt,phaArr,m_apply_noise,makeDigi,phaThreshArr,vetoArr,highArr);
+    sc = m_util.checkThresholds(acdId,mipsPmt,phaArr,rangeArr,m_apply_noise,makeDigi,phaThreshArr,vetoArr,highArr);
     if ( sc.isFailure() ) return sc;
     
     if ( makeDigi ) {
