@@ -14,7 +14,8 @@
 
 /** @class ReadDigi.cxx
  * @brief AcdDigi Test algorithm
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/ReadDigi.cxx,v 1.2 2002/07/26 17:53:29 heather Exp $
+ *
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/ReadDigi.cxx,v 1.3 2002/09/09 16:43:23 heather Exp $
  */
 
 class ReadDigi : public Algorithm {
