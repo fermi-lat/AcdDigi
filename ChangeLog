@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Feb 19 20:37:46 PST 2008
+AcdDigi/src/test/util
+
+Modified Files:
+	TestAcdDigiAlg.cxx 
+Log Message:
+added error message for various failures
+    *
+------------------------------------------------------------
 User: echarles  Tue Feb 19 20:37:44 PST 2008
 AcdDigi/src
 
