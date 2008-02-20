@@ -1,7 +1,7 @@
 #define AcdDigi_TestAcdDigiAlg_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.6 2007/04/23 19:19:11 lreyes Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.7 2007/10/09 18:50:39 echarles Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -27,7 +27,7 @@
  *
  * Exercise all of AcdDigiUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.6 2007/04/23 19:19:11 lreyes Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.7 2007/10/09 18:50:39 echarles Exp $
  */
 
 class TestAcdDigiAlg : public Algorithm {
@@ -126,20 +126,20 @@ StatusCode TestAcdDigiAlg::execute() {
     sc = m_util.photoElectronsFromEnergy(id,energy1MeV,pe_pmt[0],pe_pmt[1]);
     if ( sc.isFailure() ) return sc;
     log << MSG::DEBUG << "1.0 MeV = " << pe_pmt[0] << ',' << pe_pmt[1] << " photo electrons." << endreq;
-    sc = m_util.mipEquivalentLightYeild(id,pe_pmt[0],pe_pmt[1],pmt_mips[0],pmt_mips[0]);
+    sc = m_util.mipEquivalentLightYeild(id,pe_pmt[0],pe_pmt[1],log,pmt_mips[0],pmt_mips[0]);
     if ( sc.isFailure() ) return sc;
     log << MSG::DEBUG << "1.0 MeV = " << pmt_mips[0] << ',' << pmt_mips[0] << " mips." << endreq;
-    sc = m_util.phaCounts(id,pmt_mips,false,range,pha);
+    sc = m_util.phaCounts(id,pmt_mips,false,log,range,pha);
     log << MSG::DEBUG << "1.0 MeV = " << range[0] << ':' << pha[0] << ","
 	<< range[1] << ':' << pha[1] << " PHA." << endreq;
     
     sc = m_util.photoElectronsFromEnergy(id,energy20MeV,pe_pmt[0],pe_pmt[1]);
     if ( sc.isFailure() ) return sc;
     log << MSG::DEBUG << "20.0 MeV = " << pe_pmt[0] << ',' << pe_pmt[1] << " photo electrons." << endreq;
-    sc = m_util.mipEquivalentLightYeild(id,pe_pmt[0],pe_pmt[1],pmt_mips[0],pmt_mips[0]);
+    sc = m_util.mipEquivalentLightYeild(id,pe_pmt[0],pe_pmt[1],log,pmt_mips[0],pmt_mips[0]);
     if ( sc.isFailure() ) return sc;
     log << MSG::DEBUG << "20.0 MeV = " << pmt_mips[0] << ',' << pmt_mips[0] << " mips." << endreq;
-    sc = m_util.phaCounts(id,pmt_mips,false,range,pha);
+    sc = m_util.phaCounts(id,pmt_mips,false,log,range,pha);
     log << MSG::DEBUG << "20.0 MeV = " << range[0] << ':' << pha[0] << ","
 	<< range[1] << ':' << pha[1] << " PHA." << endreq;
 
