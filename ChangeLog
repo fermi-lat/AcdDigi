@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Feb 20 16:39:03 PST 2008
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag v3r2p1 Fix to Ribbon binning
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-02-00, operation: add
 Package: AcdDigi
