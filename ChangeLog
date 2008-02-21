@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Wed Feb 20 16:39:04 PST 2008
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiUtil.cxx 
+Log Message:
+tag v3r2p1 Fix to Ribbon binning
+    *
+------------------------------------------------------------
+User: echarles  Wed Feb 20 16:39:04 PST 2008
 AcdDigi/doc
 
 Modified Files:
