@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Tue Mar 18 13:00:50 PDT 2008
+AcdDigi/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tag v3r2p2, fix to set PHA for hits below ZS threshold to 0
+
+    *
+------------------------------------------------------------
 User: echarles  Tue Mar 18 13:00:49 PDT 2008
 AcdDigi/cmt
 
