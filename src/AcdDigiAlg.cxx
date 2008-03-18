@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.45 2008/02/20 04:37:43 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.46 2008/02/21 00:39:04 echarles Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -323,6 +323,10 @@ StatusCode AcdDigiAlg::makeDigis(const std::map<idents::AcdId, std::pair<double,
     sc = m_util.checkThresholds(acdId,mipsPmt,phaArr,rangeArr,m_apply_noise,log,makeDigi,phaThreshArr,vetoArr,highArr);
     if ( sc.isFailure() ) return sc;
     
+    // Ok, kill PHA below ZS threshold
+    phaArr[0] = phaThreshArr[0] ? phaArr[0] : 0;
+    phaArr[1] = phaThreshArr[1] ? phaArr[1] : 0;
+
     if ( makeDigi ) {
       Event::AcdDigi* aDigi = new Event::AcdDigi(acdId, volId,
 						 m_energyDepMap[acdId], phaArr, 
