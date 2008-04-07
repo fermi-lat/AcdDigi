@@ -2,6 +2,14 @@
 TAG
 Tag name: AcdDigi-03-02-02, operation: add
 Package: AcdDigi
+User: glastrm  Mon Apr  7 08:03:30 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: AcdDigi-03-02-02, operation: add
+Package: AcdDigi
 User: glastrm  Tue Mar 18 13:15:12 2008
 Files:
   AcdDigi/.cvsignore  1.3
