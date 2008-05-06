@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiUtil_CPP 
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.23 2008/02/20 04:37:43 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.24 2008/02/21 00:39:04 echarles Exp $
 // Description
 // Some utility methods helpful for performing the ACD digitization.
 
@@ -12,6 +12,7 @@
 
 #include "CLHEP/Random/RandPoisson.h"
 #include "CLHEP/Random/RandGauss.h"
+#include "CLHEP/Random/RandFlat.h"
 
 #include "CalibData/Acd/AcdPed.h"
 #include "CalibData/Acd/AcdGain.h"
@@ -418,6 +419,13 @@ StatusCode AcdDigiUtil::phaCounts(const idents::AcdId& id, const double mipEquiv
     log << MSG::ERROR << "Couldn't get calib data " << id.id() << endreq;
     return sc;
   }
+
+  // Kill 1% of PHA values dead, for testing Ninja stuff
+  //if ( CLHEP::RandFlat::shoot(1.) < 0.01 ) {
+  //  range[0] = range[1] = Event::AcdDigi::LOW;
+  //  pha[0] = pha[1] = 0;
+  //  return sc;
+  //}
 
   for ( unsigned i(0); i < 2; i++ ) {
     const AcdSimCalibData* calibData = i == 0 ? pmtACalib : pmtBCalib;
