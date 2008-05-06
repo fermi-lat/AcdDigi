@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Tue May  6 14:58:09 PDT 2008
+AcdDigi/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tag v3r2p3 Added correct setting of gem flag and ninja bit
+    *
+------------------------------------------------------------
+User: echarles  Tue May  6 14:58:09 PDT 2008
 AcdDigi/cmt
 
 Modified Files:
