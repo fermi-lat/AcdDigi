@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue May  6 14:58:09 PDT 2008
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag v3r2p3 Added correct setting of gem flag and ninja bit
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-02-02, operation: add
 Package: AcdDigi
