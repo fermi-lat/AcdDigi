@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.47 2008/03/18 20:00:01 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.48 2008/05/06 21:58:09 echarles Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -21,6 +21,8 @@
 #include "GlastSvc/GlastDetSvc/IGlastDetSvc.h"
 #include "AcdUtil/IAcdGeometrySvc.h"
 #include "AcdUtil/IAcdCalibSvc.h"
+
+#include "CLHEP/Random/RandExponential.h"
 
 // Define the factory for this algorithm
 static const AlgFactory<AcdDigiAlg>  Factory;
@@ -284,7 +286,20 @@ StatusCode AcdDigiAlg::makeDigis(const std::map<idents::AcdId, std::pair<double,
   MsgStream log( msgSvc(), name() );
 
   std::set<idents::AcdId> doneMap;
-  
+
+  double timeTicks(0.);
+  if ( m_apply_coherent_noise ) {
+    // No good way to do the coherent noise, so we make it up
+    // Depends on # of ticks, so we throw and exponential with a mean of 2000 ticks
+    // Since this is the only place we have this number, there is no way to take out this
+    // effect with a calibration.  
+    // This should only be used for doing studies.
+    static const unsigned GemOffset(529);
+    static const double meanDeltaGemTime(2000.);
+    timeTicks = CLHEP::RandExponential::shoot(meanDeltaGemTime);
+    timeTicks += GemOffset;
+  }
+
   // Now fill the TDS with AcdDigis
   // Loop over all tiles in the geometry
   for(AcdTileList::const_iterator it=m_tiles.begin(); it!=m_tiles.end(); ++it){
@@ -316,7 +331,7 @@ StatusCode AcdDigiAlg::makeDigis(const std::map<idents::AcdId, std::pair<double,
     if ( sc.isFailure() ) return sc;
     
     if ( m_apply_coherent_noise ) {
-      sc = m_util.applyCoherentNoiseToPha(acdId,5000,log,phaArr);
+      sc = m_util.applyCoherentNoiseToPha(acdId,(unsigned)timeTicks,log,phaArr);
       if ( sc.isFailure() ) return sc;	
     }
 
