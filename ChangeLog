@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed May  7 17:03:03 PDT 2008
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiUtil.cxx 
+Log Message:
+Added stuff to simulate coherent noise, for testing only, disable by default
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-02-03, operation: add
 Package: AcdDigi
