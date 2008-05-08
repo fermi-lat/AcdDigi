@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiUtil_CPP 
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.24 2008/02/21 00:39:04 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.25 2008/05/06 21:58:10 echarles Exp $
 // Description
 // Some utility methods helpful for performing the ACD digitization.
 
@@ -478,13 +478,19 @@ StatusCode AcdDigiUtil::applyCoherentNoiseToPha(const idents::AcdId& id, unsigne
   for ( unsigned i(0); i < 2; i++ ) {
     const AcdSimCalibData* calibData = i == 0 ? pmtACalib : pmtBCalib;
     const CalibData::AcdCoherentNoise* cNoise = calibData->coherentNoise_calib();
-    // function form is A * sin ( b*x + c ) * exp(-dx)
-    double effect = cNoise->getAmplitude();
-    if ( effect < 0.5 ) continue;
-    effect *= sin( cNoise->getFrequency() * deltaGemEventTime + cNoise->getPhase());
-    effect *= exp( -1.0 * cNoise->getDecay() *  deltaGemEventTime);
-    int effectInt = int(effect);
-    pha[i] = ( -1* effect > pha[i] ) ? 0 : pha[i] - effectInt;    
+    double deltaPed(0.);
+    sc = AcdCalib::coherentNoise(deltaGemEventTime,
+				 cNoise->getAmplitude(),cNoise->getDecay(),cNoise->getFrequency(),cNoise->getPhase(),
+				 deltaPed); 
+    if ( sc.isFailure() ) {
+      log << MSG::ERROR << "Failed to apply coherent noise " << id.id() << endreq;
+      return sc;
+    }
+    if ( -1 * deltaPed > pha[i] ) {
+      pha[i] = 0;
+    } else {
+      pha[i] += deltaPed;
+    }
   }
   return StatusCode::SUCCESS;
 }
