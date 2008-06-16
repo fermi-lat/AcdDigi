@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jun 16 16:48:01 PDT 2008
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag v3r3p1: Added AcdDigiAlg.lightYeildRatio jobOption, to degrade the light yield
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-03-00, operation: add
 Package: AcdDigi
