@@ -19,7 +19,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.17 2007/10/09 18:50:38 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.18 2008/02/20 00:10:34 echarles Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -66,9 +66,13 @@ private:
   /// to the PHA values
   bool m_apply_coherent_noise;
 
- /// JobOptions parameter denoting whether or not to apply edge effects
+  /// JobOptions parameter denoting whether or not to apply edge effects
   /// according to the position of MC hits.
   bool m_edge_effect;
+
+  /// JobOptions parameter use to degrade performance of ACD
+  /// Reduces the light yield, defaults to 1.0
+  double m_lightYeildRatio;
 
   /// Access the methods in the AcdDigiUtil class
   AcdDigiUtil m_util;
