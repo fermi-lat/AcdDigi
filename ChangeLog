@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Mon Jun 16 16:48:02 PDT 2008
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h 
+Log Message:
+tag v3r3p1: Added AcdDigiAlg.lightYeildRatio jobOption, to degrade the light yield
+    *
+------------------------------------------------------------
+User: echarles  Mon Jun 16 16:48:02 PDT 2008
 AcdDigi/doc
 
 Modified Files:
