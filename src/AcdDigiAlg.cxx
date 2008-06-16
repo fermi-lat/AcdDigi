@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.48 2008/05/06 21:58:09 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.49 2008/05/08 00:03:02 echarles Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -40,6 +40,7 @@ Algorithm(name, pSvcLocator) {
     declareProperty("applyGaussianNoise", m_apply_noise=true);
     declareProperty("applyCoherentNoise", m_apply_coherent_noise=true);
     declareProperty("edgeEffect", m_edge_effect=true);
+    declareProperty("lightYeildRatio", m_lightYeildRatio=1.0);
 }
 
 
@@ -220,7 +221,11 @@ StatusCode AcdDigiAlg::fillEnergyAndPeMaps( const Event::McPositionHitCol& mcHit
       log << MSG::ERROR << "Deposited energy in ACD from neither tile nor ribbon " << volId.name() << ' ' << energy << endreq;
       return StatusCode::FAILURE;
     }
-
+    
+    // Adjust the light yield
+    pe_pmtA_mean *= m_lightYeildRatio;
+    pe_pmtB_mean *= m_lightYeildRatio;
+    
     // Add the deposited energy to the map
     if (energyIdMap.find(id) != energyIdMap.end()) {
       energyIdMap[id] += energy;
@@ -258,6 +263,10 @@ StatusCode AcdDigiAlg::convertPeToMips( const std::map<idents::AcdId, std::pair<
     // Throw the Poisson stats on the expected # of PE.
     double pe_pmtA = AcdDigiUtil::simulateDynodeChain(pe_pmtA_mean);
     double pe_pmtB = AcdDigiUtil::simulateDynodeChain(pe_pmtB_mean);    
+
+    // Adjust the light yield
+    pe_pmtA /= m_lightYeildRatio;
+    pe_pmtB /= m_lightYeildRatio;
 
     double mipA(0.); 
     double mipB(0.);
