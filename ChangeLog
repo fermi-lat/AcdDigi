@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Wed Jul  9 14:13:39 PDT 2008
+GlastRelease-scons/AcdDigi
+
+Added Files:
+	AcdDigiLib.py SConscript 
+Log Message:
+Added SConscript files to packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-03-01, operation: add
 Package: AcdDigi
