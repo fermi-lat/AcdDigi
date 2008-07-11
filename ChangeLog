@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glast  Thu Jul 10 17:32:26 PDT 2008
+GlastRelease-scons/AcdDigi
+
+Modified Files:
+	AcdDigiLib.py SConscript 
+Log Message:
+Changes to allow GR packages to build on windows
+    *
+------------------------------------------------------------
 User: glastrm  Wed Jul  9 14:13:39 PDT 2008
 GlastRelease-scons/AcdDigi
 
