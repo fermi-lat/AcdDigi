@@ -1,7 +1,7 @@
 #define AcdDigi_TestAcdDigiAlg_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.7 2007/10/09 18:50:39 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.8 2008/02/20 04:37:46 echarles Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -27,7 +27,7 @@
  *
  * Exercise all of AcdDigiUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.7 2007/10/09 18:50:39 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.8 2008/02/20 04:37:46 echarles Exp $
  */
 
 class TestAcdDigiAlg : public Algorithm {
@@ -61,7 +61,7 @@ TestAcdDigiAlg::TestAcdDigiAlg(const std::string& name, ISvcLocator* pSvcLocator
 Algorithm(name, pSvcLocator) {
     
     // Declare the properties that may be set in the job options file
-    declareProperty ("xmlFile", m_xmlFile="$(ACDDIGIROOT)/xml/acdDigi.xml");
+    declareProperty ("xmlFile", m_xmlFile="$(ACDDIGIXMLPATH)/acdDigi.xml");
 }
 
 StatusCode TestAcdDigiAlg::initialize() {
