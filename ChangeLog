@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Mon Jul 21 08:17:23 PDT 2008
+GlastRelease-scons/AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiOrgAlg.cxx 
+Log Message:
+Removed dependency on CMT env variables
+    *
+------------------------------------------------------------
 User: glast  Thu Jul 10 17:32:26 PDT 2008
 GlastRelease-scons/AcdDigi
 
