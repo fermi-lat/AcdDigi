@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiOrgAlg_CPP 
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiOrgAlg.cxx,v 1.4 2004/01/19 10:28:55 berthon Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/AcdDigiOrgAlg.cxx,v 1.5 2005/01/04 22:05:14 jrb Exp $
 // Description:
 // Initial version of ACD digitization used for the PDR studies.
 // ACD Monte Carlo hit data are assumed to be stored in McIntegratingHits.
@@ -37,7 +37,7 @@ AcdDigiOrgAlg::AcdDigiOrgAlg(const std::string& name, ISvcLocator* pSvcLocator) 
 Algorithm(name, pSvcLocator) {
     
     // Declare the properties that may be set in the job options file
-    declareProperty ("xmlFile", m_xmlFile="$(ACDDIGIROOT)/xml/acdDigi.xml");
+    declareProperty ("xmlFile", m_xmlFile="$(ACDDIGIXMLPATH)/acdDigi.xml");
 }
 
 

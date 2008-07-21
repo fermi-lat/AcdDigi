@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.49 2008/05/08 00:03:02 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/AcdDigiAlg.cxx,v 1.50 2008/06/16 23:48:02 echarles Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -34,7 +34,7 @@ const IAlgFactory& AcdDigiAlgFactory = Factory;
 AcdDigiAlg::AcdDigiAlg(const std::string& name, ISvcLocator* pSvcLocator) :
 Algorithm(name, pSvcLocator) {
     
-    declareProperty("xmlFile", m_xmlFileName="$(ACDDIGIROOT)/xml/acdDigi.xml");
+    declareProperty("xmlFile", m_xmlFileName="$(ACDDIGIXMLPATH)/acdDigi.xml");
     declareProperty("AcdSimCalibSvc",    m_calibSvcName = "AcdSimCalibSvc");
     declareProperty("applyPoisson", m_apply_poisson=true);
     declareProperty("applyGaussianNoise", m_apply_noise=true);
