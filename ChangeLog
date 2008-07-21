@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: glastrm  Mon Jul 21 08:17:23 PDT 2008
+GlastRelease-scons/AcdDigi/src/test/util
+
+Modified Files:
+	TestAcdDigiAlg.cxx jobOptions.txt 
+Log Message:
+Removed dependency on CMT env variables
+    *
+------------------------------------------------------------
+User: glastrm  Mon Jul 21 08:17:23 PDT 2008
 GlastRelease-scons/AcdDigi/src/test
 
 Modified Files:
