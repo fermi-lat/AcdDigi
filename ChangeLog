@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Sun Jul 27 22:50:03 PDT 2008
+AcdDigi/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+new tag includes CMT env var removal
+    *
+------------------------------------------------------------
+User: heather  Sun Jul 27 22:50:03 PDT 2008
 AcdDigi/cmt
 
 Modified Files:
