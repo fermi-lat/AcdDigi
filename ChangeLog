@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sun Jul 27 22:50:03 PDT 2008
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+new tag includes CMT env var removal
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r3gr1, operation: add
 Package: AcdDigi
