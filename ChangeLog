@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Fri Aug 15 14:22:38 PDT 2008
+GlastRelease-scons/AcdDigi
+
+Modified Files:
+	SConscript 
+Log Message:
+Added SConscript files for packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-04-00, operation: add
 Package: AcdDigi
