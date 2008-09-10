@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/SConscript,v 1.3 2008/07/28 06:30:07 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/SConscript,v 1.4 2008/08/15 21:22:38 ecephas Exp $
 # Authors: Heather Kelly <heather@milkyway.gsfc.nasa.gov>
 # Version: AcdDigi-03-04-00
 
@@ -13,9 +13,6 @@ libEnv.Tool('AcdDigiLib', depsOnly = 1)
 AcdDigi = libEnv.SharedLibrary('AcdDigi', listFiles(['src/*.cxx', 'src/Dll/*.cxx']))
 
 progEnv.Tool('AcdDigiLib')
-progEnv.Tool('identsLib')
-progEnv.Tool('EventLib')
-progEnv.Tool('xmlBaseLib')
 test_AcdDigiUtil = progEnv.GaudiProgram('test_AcdDigiUtil', 
 listFiles(['src/test/util/*.cxx']), test = 1)
 test_AcdDigi = progEnv.GaudiProgram('test_AcdDigi', listFiles(['src/test/*.cxx']), test = 1)
