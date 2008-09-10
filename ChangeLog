@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: ecephas  Wed Sep 10 07:52:30 PDT 2008
+GlastRelease-scons/AcdDigi
+
+Modified Files:
+	SConscript 
+Log Message:
+Removed
+	progEnv.Tool('identsLib')
+	progEnv.Tool('EventLib')
+	progEnv.Tool('xmlBaseLib')
+
+    *
+------------------------------------------------------------
 User: ecephas  Fri Aug 15 14:22:38 PDT 2008
 GlastRelease-scons/AcdDigi
 
