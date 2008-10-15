@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Wed Oct 15 08:45:40 PDT 2008
+AcdDigi/src
+
+Added Files:
+	AcdDigiMergeAlg.cxx 
+Log Message:
+Initial import AcdDigiMergeAlg for merging AcdDigis from background events with those from simulation
+    *
+------------------------------------------------------------
+User: usher  Wed Oct 15 08:45:40 PDT 2008
 AcdDigi/src/Dll
 
 Modified Files:
