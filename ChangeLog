@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Dec  1 15:57:23 PST 2008
+AcdDigi/src
+
+Removed Files:
+	AcdDigiMergeAlg.cxx 
+Log Message:
+Merging moves into the Overlay package, remove AcdDigiMergeAlg and tag
+    *
+------------------------------------------------------------
 User: usher  Mon Dec  1 15:57:22 PST 2008
 AcdDigi/doc
 
