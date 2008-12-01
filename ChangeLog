@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Dec  1 15:58:07 PST 2008
+AcdDigi/src/Dll
+
+Modified Files:
+	AcdDigi_load.cxx 
+Log Message:
+Merging moves into the Overlay package, remove AcdDigiMergeAlg and tag
+    *
+------------------------------------------------------------
 User: usher  Mon Dec  1 15:57:23 PST 2008
 AcdDigi/src
 
