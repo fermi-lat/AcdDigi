@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Dec  1 15:57:22 PST 2008
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Merging moves into the Overlay package, remove AcdDigiMergeAlg and tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-05-00, operation: add
 Package: AcdDigi
