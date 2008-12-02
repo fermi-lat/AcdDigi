@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Tue Dec  2 08:02:58 PST 2008
+GlastRelease-scons/AcdDigi
+
+Modified Files:
+	SConscript 
+Log Message:
+Check in latest revision for AcdDigi, branch tag GlastReleasev15r49
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-06-00, operation: add
 Package: AcdDigi
