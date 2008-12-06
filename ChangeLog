@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+TAG
+Tag name: AcdDigi-03-04-00, operation: mov
+Package: AcdDigi
+User: glast  Fri Dec  5 16:20:05 2008
+Files:
+  AcdDigi/SConscript  1.9
+  AcdDigi/SConscript  1.9
+
+    *
+------------------------------------------------------------
 User: ecephas  Fri Dec  5 09:35:45 PST 2008
 GlastRelease-scons/AcdDigi
 
