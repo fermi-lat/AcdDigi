@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: AcdDigi-03-04-00, operation: mov
+Package: AcdDigi
+User: glast  Mon Dec  8 16:18:15 2008
+Files:
+  AcdDigi/AcdDigiLib.py  1.3
+
+    *
+------------------------------------------------------------
 User: ecephas  Mon Dec  8 16:04:43 PST 2008
 GlastRelease-scons/AcdDigi
 
