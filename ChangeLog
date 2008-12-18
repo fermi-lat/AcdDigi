@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Dec 17 18:45:49 PST 2008
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h 
+Log Message:
+Modifications to handle overlay events, in particular adding information to the AcdDigi objects
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r4, operation: mov
 Package: AcdDigi
