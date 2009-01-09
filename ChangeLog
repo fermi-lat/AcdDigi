@@ -1,5 +1,39 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-15-50-10, operation: del
+Package: AcdDigi
+User: glastrm  Fri Jan  9 08:29:50 2009
+Files:
+  AcdDigi/.cvsignore  1.3
+  AcdDigi/ChangeLog  1.327
+  AcdDigi/SConscript  1.10
+  AcdDigi/AcdDigiLib.py  1.3
+  AcdDigi/cmt/.cvsignore  1.1.1.1
+  AcdDigi/cmt/requirements  1.65
+  AcdDigi/doc/release.notes  1.67
+  AcdDigi/doc/images/AcdDigiDiagram.gif  1.1
+  AcdDigi/src/AcdTileList.cxx  1.7
+  AcdDigi/src/AcdDigiOrgAlg.cxx  1.6
+  AcdDigi/src/AcdDigiRandom.cxx  1.1
+  AcdDigi/src/AcdTileList.h  1.2
+  AcdDigi/src/mainpage.h  1.8
+  AcdDigi/src/AcdDigiAlg.cxx  1.52
+  AcdDigi/src/AcdDigiUtil.h  1.17
+  AcdDigi/src/AcdDigiAlg.h  1.20
+  AcdDigi/src/AcdDigiUtil.cxx  1.26
+  AcdDigi/src/AcdDigiOrgAlg.h  1.3
+  AcdDigi/src/Dll/AcdDigi_dll.cxx  1.2
+  AcdDigi/src/Dll/AcdDigi_load.cxx  1.8
+  AcdDigi/src/test/jobOptions.txt  1.6
+  AcdDigi/src/test/ReadDigi.cxx  1.4
+  AcdDigi/src/test/util/jobOptions.txt  1.3
+  AcdDigi/src/test/util/TestAcdDigiAlg.cxx  1.9
+  AcdDigi/xml/acdDigiOrg.xml  1.1
+  AcdDigi/xml/acdDigi.xml  1.12
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-15-50-10, operation: add
 Package: AcdDigi
 User: glastrm  Thu Jan  8 15:00:11 2009
