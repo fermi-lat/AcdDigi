@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: ecephas  Fri Jan 16 08:17:02 PST 2009
+GlastRelease-scons/AcdDigi
+
+Modified Files:
+      Tag: GlastReleasev15r49
+	AcdDigiLib.py 
+Log Message:
+Added GlastSvcLib library.
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-15-50-10, operation: del
 Package: AcdDigi
