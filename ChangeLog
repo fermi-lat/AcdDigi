@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: GlastRelease-15-49-00, operation: mov
+Package: AcdDigi
+User: glastrm  Fri Jan 16 08:53:41 2009
+Files:
+  AcdDigi/AcdDigiLib.py  1.2.26.1
+
+    *
+------------------------------------------------------------
 User: ecephas  Fri Jan 16 08:17:02 PST 2009
 GlastRelease-scons/AcdDigi
 
