@@ -19,7 +19,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.19 2008/06/16 23:48:02 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.20 2008/12/18 02:45:49 usher Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -40,7 +40,8 @@ protected:
                  std::map<idents::AcdId, unsigned int>& statusMap);
   
   StatusCode convertPeToMips( const std::map<idents::AcdId, std::pair<double, double> >& peMap,
-                  std::map<idents::AcdId, std::pair<double, double> >& mipsMap);
+                              const std::map<idents::AcdId, unsigned int>&               statusMap,
+                                    std::map<idents::AcdId, std::pair<double, double> >& mipsMap);
   
   StatusCode makeDigis(const std::map<idents::AcdId, std::pair<double,double> >& mipsMap,
                        const std::map<idents::AcdId, unsigned int>& statusMap,
