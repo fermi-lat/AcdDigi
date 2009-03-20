@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Mar 19 19:54:13 PDT 2009
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h 
+Log Message:
+Modifications to AcdDigiAlg to do special handling of the overlay hits in the case that a hit tile is "purely overlay".
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-04-00, operation: mov
 Package: AcdDigi
