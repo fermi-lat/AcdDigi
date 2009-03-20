@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v3r8, operation: mov
+Package: AcdDigi
+User: glastrm  Thu Mar 19 20:30:13 2009
+Files:
+  AcdDigi/SConscript  1.12
+
+    *
+------------------------------------------------------------
 User: glastrm  Thu Mar 19 20:30:07 PDT 2009
 AcdDigi
 
