@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Mon Jun  8 10:12:08 PDT 2009
+AcdDigi/src
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	AcdDigiUtil.cxx 
+Log Message:
+Minor fix for new interface of AcdTileSection
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-08-00, operation: add
 Package: AcdDigi
