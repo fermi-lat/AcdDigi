@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Mon Jun  8 16:38:57 PDT 2009
+AcdDigi/cmt
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	requirements 
+Log Message:
+tag v3r8gr1: Update to using latest interface in AcdTileDim
+    *
+------------------------------------------------------------
 User: echarles  Mon Jun  8 10:12:08 PDT 2009
 AcdDigi/src
 
