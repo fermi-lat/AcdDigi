@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiUtil_CPP 
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.26 2008/05/08 00:03:03 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.26.258.1 2009/06/08 17:12:07 echarles Exp $
 // Description
 // Some utility methods helpful for performing the ACD digitization.
 
@@ -489,7 +489,7 @@ StatusCode AcdDigiUtil::applyCoherentNoiseToPha(const idents::AcdId& id, unsigne
     if ( -1 * deltaPed > pha[i] ) {
       pha[i] = 0;
     } else {
-      pha[i] += deltaPed;
+      pha[i] += (short unsigned int)(deltaPed);
     }
   }
   return StatusCode::SUCCESS;
