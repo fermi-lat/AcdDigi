@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiUtil_CPP 
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.25 2008/05/06 21:58:10 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.26 2008/05/08 00:03:03 echarles Exp $
 // Description
 // Some utility methods helpful for performing the ACD digitization.
 
@@ -519,7 +519,8 @@ StatusCode AcdDigiUtil::tileEdgeEffect(const Event::McPositionHit *hit, MsgStrea
   double activeX(0.);
   double activeY(0.);
   
-  tileDim->activeDistance(local_x0, volId[6], activeX, activeY );
+  const AcdTileSection* sect = tileDim->getSection(volId[6]);
+  sect->activeDistance(local_x0, volId[6], activeX, activeY );
   double dist = activeX > activeY ? activeY : activeX;
   
     // Apply edge correction if within m_max_edge_dist (mm) of the edge
