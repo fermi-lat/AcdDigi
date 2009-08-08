@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Aug  7 18:27:48 PDT 2009
+GlastRelease-scons/AcdDigi
+
+Modified Files:
+	.cvsignore AcdDigiLib.py SConscript 
+Log Message:
+SConscript:  use registerTargets
+AcdDigiLib.py:  add a few more libraries
+.cvsignore:    add SCons build products
+
+    *
+------------------------------------------------------------
 User: heather  Wed Jul  1 08:41:07 PDT 2009
 AcdDigi/doc
 
