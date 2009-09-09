@@ -1,7 +1,7 @@
 #define AcdDigi_TestAcdDigiAlg_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.8 2008/02/20 04:37:46 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.9 2008/07/21 15:17:23 glastrm Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -27,7 +27,7 @@
  *
  * Exercise all of AcdDigiUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.8 2008/02/20 04:37:46 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.9 2008/07/21 15:17:23 glastrm Exp $
  */
 
 class TestAcdDigiAlg : public Algorithm {
@@ -143,7 +143,7 @@ StatusCode TestAcdDigiAlg::execute() {
     log << MSG::DEBUG << "20.0 MeV = " << range[0] << ':' << pha[0] << ","
 	<< range[1] << ':' << pha[1] << " PHA." << endreq;
 
-    m_poisson.push_back(m_util.shootPoisson(5));
+    m_poisson.push_back((long)floor(m_util.shootPoisson(5)));
 
     m_gauss.push_back(m_util.shootGaussian(1.0));
 

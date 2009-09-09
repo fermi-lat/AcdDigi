@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.52 2008/12/18 02:45:49 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.53 2009/03/20 02:54:12 usher Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -310,7 +310,7 @@ StatusCode AcdDigiAlg::convertPeToMips( const std::map<idents::AcdId, std::pair<
         if (statusMap.find(itr->first) != statusMap.end()) status = statusMap.find(itr->first)->second;
 
         // If not a pure overlay hit then do the dynode simulation
-        if ((status & 0xF0000000) != Event::AcdDigi::DIGI_OVERLAY)
+        if ((status & 0xF0000000) != (unsigned int)Event::AcdDigi::DIGI_OVERLAY)
         {
             // Throw the Poisson stats on the expected # of PE.
             pe_pmtA = AcdDigiUtil::simulateDynodeChain(pe_pmtA_mean);
@@ -411,7 +411,7 @@ StatusCode AcdDigiAlg::makeDigis(const std::map<idents::AcdId, std::pair<double,
         if (statusMap.find(acdId) != statusMap.end()) statusWord = statusMap.find(acdId)->second;
 
         // Pure overlay?
-        if ((statusWord & (Event::AcdDigi::DIGI_OVERLAY | Event::AcdDigi::DIGI_MC)) == Event::AcdDigi::DIGI_OVERLAY)
+        if ((statusWord & (Event::AcdDigi::DIGI_OVERLAY | Event::AcdDigi::DIGI_MC)) == (unsigned int) Event::AcdDigi::DIGI_OVERLAY)
         {
             // Use the Overlay event's bits to attempt to reproduce ghost event behavior
             // NOTE: bit definions in OverlayEvent::AcdOverlay - need to define in better location... (upgrade!)
