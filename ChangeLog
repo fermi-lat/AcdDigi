@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Wed Sep  9 12:55:59 PDT 2009
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiUtil.cxx 
+Log Message:
+fix up some warnings
+    *
+------------------------------------------------------------
+User: heather  Wed Sep  9 12:55:59 PDT 2009
 AcdDigi/doc
 
 Modified Files:
