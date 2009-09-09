@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Sep  9 12:55:59 PDT 2009
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix up some warnings
+    *
+------------------------------------------------------------
 User: jrb  Fri Aug  7 18:27:48 PDT 2009
 GlastRelease-scons/AcdDigi
 
