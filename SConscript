@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/SConscript,v 1.12 2009/03/20 03:30:07 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/SConscript,v 1.13 2009/08/08 01:27:48 jrb Exp $
 # Authors: Heather Kelly <heather@milkyway.gsfc.nasa.gov>
-# Version: AcdDigi-03-08-00
+# Version: AcdDigi-03-08-01
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
