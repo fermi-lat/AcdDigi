@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Oct  8 11:51:14 PDT 2009
+AcdDigi
+
+Modified Files:
+	SConscript 
+Log Message:
+add in use of AcdFailureModeSvc
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-08-02, operation: add
 Package: AcdDigi
