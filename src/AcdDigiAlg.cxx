@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.53 2009/03/20 02:54:12 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.54 2009/09/09 19:55:59 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -21,6 +21,7 @@
 #include "GlastSvc/GlastDetSvc/IGlastDetSvc.h"
 #include "AcdUtil/IAcdGeometrySvc.h"
 #include "AcdUtil/IAcdCalibSvc.h"
+#include "AcdUtil/IAcdFailureModeSvc.h"
 
 #include "CLHEP/Random/RandExponential.h"
 
@@ -102,6 +103,14 @@ StatusCode AcdDigiAlg::initialize() {
         return sc;
     } else {
         log << MSG::INFO << "Got AcdGeometrySvc" << endreq;
+    }
+
+    sc =service("AcdFailureModeSvc", m_acdFailureSvc);
+    if (sc.isSuccess() ) 
+        log << MSG::INFO << "AcdFailureModeSvc loaded" << endreq;
+    else {
+        log << MSG::INFO << "AcdFailureModeSvc not found, skipping" << endreq;
+        m_acdFailureSvc = 0;
     }
 
     // Use the Job options service to set the Algorithm's parameters
@@ -370,6 +379,13 @@ StatusCode AcdDigiAlg::makeDigis(const std::map<idents::AcdId, std::pair<double,
     {
         idents::VolumeIdentifier volId = *it;
         idents::AcdId acdId(volId);
+ 
+        // Check to see if AcdFailureModeSvc is loaded
+        if (m_acdFailureSvc) {
+            // Check if this AcdId is in the list of killed detectors
+            if (m_acdFailureSvc->matchAcdId(acdId))
+                continue; // Skip this ACD detector
+        }
 
         // Check to see if we have already processed this AcdId - 
         // necessary since we also have ribbons in the mix and curved tiles
