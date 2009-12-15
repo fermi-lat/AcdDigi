@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Dec 15 07:10:39 PST 2009
+AcdDigi
+
+Modified Files:
+	SConscript 
+Log Message:
+merging in Eric's updates for AcdRecon for Pass 8
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-09-00, operation: add
 Package: AcdDigi
