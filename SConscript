@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/SConscript,v 1.16 2009/10/08 18:51:14 heather Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/SConscript,v 1.17 2009/12/15 15:10:39 heather Exp $
 # Authors: Heather Kelly <heather@milkyway.gsfc.nasa.gov>
 # Version: AcdDigi-03-10-01
 Import('baseEnv')
@@ -8,20 +8,23 @@ Import('packages')
 progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
-libEnv.Tool('AcdDigiLib', depsOnly = 1)
+libEnv.Tool('addLinkDeps', package='AcdDigi', toBuild='component')
 AcdDigi = libEnv.SharedLibrary('AcdDigi',
                                listFiles(['src/*.cxx', 'src/Dll/*.cxx']))
 
 progEnv.Tool('AcdDigiLib')
+
 test_AcdDigiUtil = progEnv.GaudiProgram('test_AcdDigiUtil', 
-	listFiles(['src/test/util/*.cxx']), test = 1)
+                                        listFiles(['src/test/util/*.cxx']),
+                                        test = 1, package='AcdDigi')
 test_AcdDigi = progEnv.GaudiProgram('test_AcdDigi',
                                     listFiles(['src/test/*.cxx']), test = 1)
 
 progEnv.Tool('registerTargets', package = 'AcdDigi',
              libraryCxts = [[AcdDigi, libEnv]],
              testAppCxts = [[test_AcdDigiUtil, progEnv], [test_AcdDigi,progEnv]],
-             includes = listFiles(['AcdDigi/*.h']))
+             includes = listFiles(['AcdDigi/*.h']),
+             jo = ['src/test/jobOptions.txt', 'src/test/util/jobOptions.txt'])
 
 
 
