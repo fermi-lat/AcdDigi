@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun 14 17:53:03 PDT 2010
+GlastRelease-scons/AcdDigi
+
+Modified Files:
+	SConscript 
+Log Message:
+install files in xml directory
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-10-02, operation: add
 Package: AcdDigi
