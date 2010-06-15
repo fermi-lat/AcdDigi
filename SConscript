@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/SConscript,v 1.18 2010/06/11 00:31:08 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/SConscript,v 1.19 2010/06/12 17:18:17 jrb Exp $
 # Authors: Heather Kelly <heather@milkyway.gsfc.nasa.gov>
 # Version: AcdDigi-03-10-02
 Import('baseEnv')
@@ -24,6 +24,7 @@ progEnv.Tool('registerTargets', package = 'AcdDigi',
              libraryCxts = [[AcdDigi, libEnv]],
              testAppCxts = [[test_AcdDigiUtil, progEnv], [test_AcdDigi,progEnv]],
              includes = listFiles(['AcdDigi/*.h']),
+             xml = ['xml/acdDigi.xml'],
              jo = ['src/test/jobOptions.txt', 'src/test/util/jobOptions.txt'])
 
 
