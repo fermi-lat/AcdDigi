@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiOrgAlg_CPP 
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/AcdDigiOrgAlg.cxx,v 1.5 2005/01/04 22:05:14 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiOrgAlg.cxx,v 1.6 2008/07/21 15:17:23 glastrm Exp $
 // Description:
 // Initial version of ACD digitization used for the PDR studies.
 // ACD Monte Carlo hit data are assumed to be stored in McIntegratingHits.
@@ -28,8 +28,9 @@
 #include "xmlBase/IFile.h"
 
 // Define the factory for this algorithm
-static const AlgFactory<AcdDigiOrgAlg>  Factory;
-const IAlgFactory& AcdDigiOrgAlgFactory = Factory;
+//static const AlgFactory<AcdDigiOrgAlg>  Factory;
+//const IAlgFactory& AcdDigiOrgAlgFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(AcdDigiOrgAlg);
 
 // Algorithm parameters which can be set at run time must be declared.
 // This should be done in the constructor.
