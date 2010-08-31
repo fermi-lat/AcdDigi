@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Tue Aug 31 05:33:42 PDT 2010
+AcdDigi/src
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	AcdDigiAlg.cxx AcdDigiOrgAlg.cxx AcdDigiRandom.cxx 
+Log Message:
+updates for Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Tue Aug 31 05:33:42 PDT 2010
 AcdDigi/doc
 
 Modified Files:
