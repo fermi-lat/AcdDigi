@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.54 2009/09/09 19:55:59 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.55 2009/10/08 18:51:14 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -26,8 +26,9 @@
 #include "CLHEP/Random/RandExponential.h"
 
 // Define the factory for this algorithm
-static const AlgFactory<AcdDigiAlg>  Factory;
-const IAlgFactory& AcdDigiAlgFactory = Factory;
+//static const AlgFactory<AcdDigiAlg>  Factory;
+//const IAlgFactory& AcdDigiAlgFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(AcdDigiAlg);
 
 
 // Algorithm parameters which can be set at run time must be declared.
