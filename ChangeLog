@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Tue Sep  7 07:26:55 PDT 2010
+AcdDigi/src
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	AcdDigiAlg.cxx AcdDigiAlg.h 
+Log Message:
+tweaks to register with random svc
+    *
+------------------------------------------------------------
 User: heather  Tue Aug 31 05:33:42 PDT 2010
 AcdDigi/src/test/util
 
