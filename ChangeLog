@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Sun Sep 19 19:50:36 PDT 2010
+AcdDigi
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	SConscript 
+Log Message:
+update SConscript version along branch
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-10-01-gr01, operation: add
 Package: AcdDigi
