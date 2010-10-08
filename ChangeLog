@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Thu Oct  7 21:00:24 PDT 2010
+AcdDigi/src/test
+
+Modified Files:
+      Tag: GlastReleasev18r7p1
+	ReadDigi.cxx jobOptions.txt 
+Log Message:
+gaudi upgrade
+    *
+------------------------------------------------------------
+User: heather  Thu Oct  7 21:00:24 PDT 2010
 AcdDigi/src
 
 Modified Files:
