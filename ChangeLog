@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Oct  7 21:00:23 PDT 2010
+AcdDigi
+
+Modified Files:
+      Tag: GlastReleasev18r7p1
+	SConscript 
+Log Message:
+gaudi upgrade
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdDigi-03-10-01-gr01, operation: add
 Package: AcdDigi
