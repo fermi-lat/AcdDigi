@@ -12,6 +12,8 @@
 
 #include "Event/Digi/AcdDigi.h"
 #include "Event/MonteCarlo/McPositionHit.h"
+#include "GlastSvc/GlastRandomSvc/IRandomAccess.h"
+
 
 #include "AcdUtil/IAcdFailureModeSvc.h"
 
@@ -21,7 +23,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.21 2009/03/20 02:54:12 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.22.20.1 2010/09/07 14:26:55 heather Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -55,6 +57,8 @@ protected:
 private:
 
   IAcdFailureModeSvc *m_acdFailureSvc;
+
+  IRandomAccess *m_randTool;
 
   /// input XML file containing parameters for Digitization
   std::string m_xmlFileName;

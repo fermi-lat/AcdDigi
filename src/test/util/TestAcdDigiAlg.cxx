@@ -1,7 +1,7 @@
 #define AcdDigi_TestAcdDigiAlg_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.9 2008/07/21 15:17:23 glastrm Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.10.20.1 2010/08/31 12:33:42 heather Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -27,7 +27,7 @@
  *
  * Exercise all of AcdDigiUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.9 2008/07/21 15:17:23 glastrm Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.10.20.1 2010/08/31 12:33:42 heather Exp $
  */
 
 class TestAcdDigiAlg : public Algorithm {
@@ -54,8 +54,9 @@ private:
     std::vector<float> m_gauss;
 };
 
-static const AlgFactory<TestAcdDigiAlg>  Factory;
-const IAlgFactory& TestAcdDigiAlgFactory = Factory;
+//static const AlgFactory<TestAcdDigiAlg>  Factory;
+//const IAlgFactory& TestAcdDigiAlgFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(TestAcdDigiAlg);
 
 TestAcdDigiAlg::TestAcdDigiAlg(const std::string& name, ISvcLocator* pSvcLocator) :
 Algorithm(name, pSvcLocator) {
