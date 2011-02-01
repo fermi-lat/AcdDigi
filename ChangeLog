@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Jan 31 19:47:59 PST 2011
+AcdDigi/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+drop explicit version of GlastSvc in use
+    *
+------------------------------------------------------------
+User: heather  Mon Jan 31 19:47:59 PST 2011
 AcdDigi
 
 Modified Files:
