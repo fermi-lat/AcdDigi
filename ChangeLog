@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Aug  1 12:07:34 PDT 2011
+AcdDigi
+
+Modified Files:
+      Tag: GlastReleasev17r35p23
+	AcdDigiLib.py SConscript 
+Log Message:
+merge in SCons for P7
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease_Pass7-17-35-23-gr07, operation: add
 Package: AcdDigi
