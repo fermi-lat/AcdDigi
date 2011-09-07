@@ -2,6 +2,16 @@
 TAG
 Tag name: GlastRelease-17-35-24-gr04, operation: add
 Package: AcdDigi
+User: heather  Wed Sep  7 14:48:33 2011
+Files:
+  AcdDigi/cmt/.cvsignore  1.1.1.1
+  AcdDigi/cmt/requirements  1.66.90.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-gr04, operation: add
+Package: AcdDigi
 User: heather  Wed Sep  7 14:48:25 2011
 Files:
   AcdDigi/.cvsignore  1.3
