@@ -1,5 +1,20 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-19-03-07, operation: add
+Package: AcdDigi
+User: heather  Wed Sep  7 10:40:09 2011
+Files:
+  AcdDigi/.cvsignore  1.4
+  AcdDigi/ChangeLog  1.409
+  AcdDigi/SConscript  1.23
+  AcdDigi/AcdDigiLib.py  1.4
+  AcdDigi/cmt/.cvsignore  1.1.1.1
+  AcdDigi/cmt/requirements  1.74
+  AcdDigi/doc/release.notes  1.77
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-19-03-07, operation: del
 Package: AcdDigi
 User: glastrm  Tue Sep  6 14:13:45 2011
