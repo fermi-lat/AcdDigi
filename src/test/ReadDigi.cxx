@@ -15,7 +15,7 @@
 /** @class ReadDigi.cxx
  * @brief AcdDigi Test algorithm
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/ReadDigi.cxx,v 1.3 2002/09/09 16:43:23 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/test/ReadDigi.cxx,v 1.4.362.1 2010/10/08 04:00:24 heather Exp $
  */
 
 class ReadDigi : public Algorithm {
@@ -33,8 +33,9 @@ private:
 
 };
 
-static const AlgFactory<ReadDigi>  Factory;
-const IAlgFactory& ReadDigiFactory = Factory;
+//static const AlgFactory<ReadDigi>  Factory;
+//const IAlgFactory& ReadDigiFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(ReadDigi);
 
 ReadDigi::ReadDigi(const std::string& name, ISvcLocator* pSvcLocator) :
 Algorithm(name, pSvcLocator) {
