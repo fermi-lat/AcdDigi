@@ -1,7 +1,8 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/SConscript,v 1.22 2010/12/02 01:38:13 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/SConscript,v 1.21.2.2 2010/10/20 18:09:01 jrb Exp $
 # Authors: Heather Kelly <heather@milkyway.gsfc.nasa.gov>
-# Version: AcdDigi-03-10-05
+# Version: AcdDigi-03-11-00
+
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
@@ -9,8 +10,8 @@ progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
 libEnv.Tool('addLinkDeps', package='AcdDigi', toBuild='component')
-AcdDigi = libEnv.SharedLibrary('AcdDigi',
-                               listFiles(['src/*.cxx', 'src/Dll/*.cxx']))
+AcdDigi = libEnv.ComponentLibrary('AcdDigi',
+                                  listFiles(['src/*.cxx']))
 
 progEnv.Tool('AcdDigiLib')
 
