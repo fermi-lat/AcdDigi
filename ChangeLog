@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Mon Dec 12 12:17:34 PST 2011
+GlastRelease-scons/AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h AcdDigiOrgAlg.cxx 
+	AcdDigiRandom.cxx 
+Log Message:
+new Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Dec 12 12:17:34 PST 2011
 GlastRelease-scons/AcdDigi/doc
 
 Modified Files:
