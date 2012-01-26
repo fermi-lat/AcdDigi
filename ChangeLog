@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: heather  Thu Jan 26 10:23:41 PST 2012
+AcdDigi/src
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	AcdDigiAlg.cxx AcdDigiAlg.h AcdDigiOrgAlg.cxx 
+	AcdDigiRandom.cxx 
+Log Message:
+Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Thu Jan 26 10:23:41 PST 2012
 AcdDigi/doc
 
 Modified Files:
