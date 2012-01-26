@@ -1,16 +1,16 @@
 package AcdDigi
-version v3r8p0gr01
+version v3r8p0gr02
 author Heather Kelly <heather@milkyway.gsfc.nasa.gov>
-# $Id: requirements,v 1.66 2009/03/20 02:59:26 usher Exp $
+# $Id: requirements,v 1.75 2011/12/12 20:17:34 heather Exp $
 
-use GlastSvc v9r*
+use GlastSvc v*
 use Event v*
 
 use facilities v2r*
 
 use xmlBase v5r*      
 
-use AcdUtil v*   
+use AcdUtil v*
 
 apply_pattern packageShr
 
@@ -18,15 +18,17 @@ apply_pattern packageShr
 #=============================================================
 private
 
+use RootmapPolicy * GlastPolicy
 use gr_app v*
 
 apply_pattern package_headers
 macro xml_source "" WIN32 "-s=../xml *.xml"
 
 library AcdDigi *.cxx \
-                Dll/*.cxx \
                 ${AcdDigi_headers}  \
                 ${xml_source}             
+
+apply_pattern generate_rootmap library=AcdDigi
 
 apply_pattern package_Cshlibflags
 private
