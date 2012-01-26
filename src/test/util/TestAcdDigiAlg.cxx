@@ -1,7 +1,7 @@
 #define AcdDigi_TestAcdDigiAlg_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.8 2008/02/20 04:37:46 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.11 2011/12/12 20:17:35 heather Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -27,7 +27,7 @@
  *
  * Exercise all of AcdDigiUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.8 2008/02/20 04:37:46 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdDigiAlg.cxx,v 1.11 2011/12/12 20:17:35 heather Exp $
  */
 
 class TestAcdDigiAlg : public Algorithm {
@@ -54,8 +54,9 @@ private:
     std::vector<float> m_gauss;
 };
 
-static const AlgFactory<TestAcdDigiAlg>  Factory;
-const IAlgFactory& TestAcdDigiAlgFactory = Factory;
+//static const AlgFactory<TestAcdDigiAlg>  Factory;
+//const IAlgFactory& TestAcdDigiAlgFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(TestAcdDigiAlg);
 
 TestAcdDigiAlg::TestAcdDigiAlg(const std::string& name, ISvcLocator* pSvcLocator) :
 Algorithm(name, pSvcLocator) {
@@ -143,7 +144,7 @@ StatusCode TestAcdDigiAlg::execute() {
     log << MSG::DEBUG << "20.0 MeV = " << range[0] << ':' << pha[0] << ","
 	<< range[1] << ':' << pha[1] << " PHA." << endreq;
 
-    m_poisson.push_back(m_util.shootPoisson(5));
+    m_poisson.push_back((long)floor(m_util.shootPoisson(5)));
 
     m_gauss.push_back(m_util.shootGaussian(1.0));
 

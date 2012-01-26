@@ -12,6 +12,7 @@
 
 #include "Event/Digi/AcdDigi.h"
 #include "Event/MonteCarlo/McPositionHit.h"
+#include "GlastSvc/GlastRandomSvc/IRandomAccess.h"
 
 /** @class AcdDigiAlg
 * @brief Algorithm to convert from hit data stored as McPositionHits into digitization data 
@@ -19,7 +20,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.20 2008/12/18 02:45:49 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.21 2009/03/20 02:54:12 usher Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -82,6 +83,8 @@ private:
   
   /// A list of all the tiles and ribbons
   AcdTileList m_tiles;
+  
+  IRandomAccess *m_randTool;
     
   std::map<idents::AcdId, double>                     m_energyDepMap;
   std::map<idents::AcdId, std::pair<double, double> > m_peMap;
