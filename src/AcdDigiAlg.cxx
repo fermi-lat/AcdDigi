@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.53 2009/03/20 02:54:12 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/AcdDigiAlg.cxx,v 1.53.98.1 2012/01/26 18:23:41 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -65,7 +65,7 @@ StatusCode AcdDigiAlg::initialize() {
         log << MSG::INFO << "Got CalibDataSvc " << m_calibSvcName << endreq;
     }
 
-    sc = m_toolSvc()->retrieveTool("AcdDigiRandom", m_randTool);
+    sc = toolSvc()->retrieveTool("AcdDigiRandom", m_randTool);
     if (sc.isFailure())
         log << MSG::WARNING << "Unable to register AcdDigiRandom" << endreq;
      
