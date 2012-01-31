@@ -3,6 +3,7 @@
  Coordinator:H.Kelly
  @verbatim
 
+ AcdDigi-03-08-00-gr03 HMK fix typo
  AcdDigi-03-08-00-gr02 HMK Gaudi v21r7
  AcdDigi-03-08-00-gr01 HMK Merge in SCons updates for P7
  v3r8    19-Mar-2009  TU Use input overlay accept/veto/cno bits for pure overlay event
