@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Tue Jan 31 07:56:48 PST 2012
+GlastRelease-scons/AcdDigi
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	SConscript 
+Log Message:
+fix typo
+    *
+------------------------------------------------------------
 User: heather  Thu Jan 26 10:23:41 PST 2012
 AcdDigi/src/test/util
 
