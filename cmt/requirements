@@ -1,7 +1,7 @@
 package AcdDigi
 version v3r11p0
 author Heather Kelly <heather@milkyway.gsfc.nasa.gov>
-# $Id: requirements,v 1.72.2.1 2010/10/08 04:00:23 heather Exp $
+# $Id: requirements,v 1.75 2011/12/12 20:17:34 heather Exp $
 
 use GlastSvc v*
 use Event v*
@@ -18,7 +18,7 @@ apply_pattern packageShr
 #=============================================================
 private
 
-use RootmapPolicy * GlastPolicy
+#use RootmapPolicy * GlastPolicy
 use gr_app v*
 
 apply_pattern package_headers
@@ -28,7 +28,7 @@ library AcdDigi *.cxx \
                 ${AcdDigi_headers}  \
                 ${xml_source}             
 
-apply_pattern generate_rootmap library=AcdDigi
+#apply_pattern generate_rootmap library=AcdDigi
 
 apply_pattern package_Cshlibflags
 private
