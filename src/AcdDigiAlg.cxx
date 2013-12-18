@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/AcdDigiAlg.cxx,v 1.55.22.1 2010/10/08 04:00:24 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/AcdDigiAlg.cxx,v 1.56 2011/12/12 20:17:34 heather Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -43,6 +43,8 @@ Algorithm(name, pSvcLocator) {
     declareProperty("applyCoherentNoise", m_apply_coherent_noise=true);
     declareProperty("edgeEffect", m_edge_effect=true);
     declareProperty("lightYeildRatio", m_lightYeildRatio=1.0);
+    //Change made by D. Green to incorporate zero suppression as a JO
+    declareProperty("phaZeroThreshold", m_phaZeroThreshold=25.0);
 }
 
 
@@ -423,7 +425,8 @@ StatusCode AcdDigiAlg::makeDigis(const std::map<idents::AcdId, std::pair<double,
             if ( sc.isFailure() ) return sc;  
         }
 
-        sc = m_util.checkThresholds(acdId,mipsPmt,phaArr,rangeArr,m_apply_noise,log,makeDigi,phaThreshArr,vetoArr,highArr);
+        //Change made by D. Green to incorporate zero suppression as a JO
+        sc = m_util.checkThresholds(acdId,mipsPmt,phaArr,rangeArr,m_apply_noise,log,makeDigi,phaThreshArr,vetoArr,highArr,m_phaZeroThreshold);
         if ( sc.isFailure() ) return sc;
 
         // Now do special handling for pure Overlay events

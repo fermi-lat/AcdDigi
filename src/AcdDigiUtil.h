@@ -46,7 +46,7 @@ namespace Event {
  * @brief Utility class that bundles all calibrations constants associated with a single ACD channel.
  * 
  * @author Eric Charles
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.16 2008/02/20 00:10:34 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/AcdDigiUtil.h,v 1.17 2008/02/20 04:37:43 echarles Exp $
  */
 
 class AcdSimCalibData {
@@ -64,7 +64,9 @@ public:
   inline double mip_per_MeV() const { return m_mip_per_MeV; }
   /// photo-electrons by MeV
   inline double pe_per_MeV() const { return m_pe_per_MeV; }
-  /// pedestals
+  /// pedestal
+  inline double pedestal_pha() const{return m_pedestal;}
+  /// zero suppression threshold
   inline unsigned short threshold_pha() const { return m_threshold_pha; }
   /// veto threshold  
   inline double veto_threshold_mips() const { return m_veto_threshold_mips; }
@@ -108,6 +110,8 @@ public:
   // Grap combined constants as needed
   StatusCode latchPePerMeV();
   StatusCode latchPhaThreshold(double countsAbovePed);
+  //Change made by D. Green to incorporate zero suppression as a JO
+  StatusCode latchPedestal();
   StatusCode latchVetoThreshold();  
   StatusCode latchCnoThreshold();  
   StatusCode latchXOverMips();    
@@ -144,6 +148,8 @@ private:
   double m_cno_width_mips;
   /// high range calibraion
   double m_pedestal_highRange;
+  /// low range pedestal
+  double m_pedestal;
 
 };
 
@@ -151,7 +157,7 @@ private:
 * @brief Utility class that defines the methods used for ACD digitization.
 * 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.h,v 1.16 2008/02/20 00:10:34 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/AcdDigiUtil.h,v 1.17 2008/02/20 04:37:43 echarles Exp $
 */
 
 class AcdDigiUtil  {
@@ -229,11 +235,13 @@ public:
   StatusCode tileEdgeEffect(const Event::McPositionHit *hit,  MsgStream& log, double& energy);
 
   /// Checks all the various thresholds
+  //Change made by D. Green to incorporate zero suppression as a JO
   StatusCode checkThresholds(const idents::AcdId& id, const double mipEquiv[2],
 			     const unsigned short phaArr[2], const Event::AcdDigi::Range rangeArr[2], bool applyNoise, 
 			     MsgStream& log,
 			     bool& makeDigi, 
-			     bool phaThreshArr[2], bool vetoArr[2], bool highArr[2]);  
+			     bool phaThreshArr[2], bool vetoArr[2], bool highArr[2],
+			     const double phaZeroThreshold);  
   
 protected:
 
