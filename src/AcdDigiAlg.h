@@ -23,7 +23,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/AcdDigiAlg.h,v 1.22.22.1 2010/10/08 04:00:24 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/AcdDigiAlg.h,v 1.23 2011/12/12 20:17:34 heather Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -84,6 +84,9 @@ private:
   /// JobOptions parameter use to degrade performance of ACD
   /// Reduces the light yield, defaults to 1.0
   double m_lightYeildRatio;
+
+  /// JobOptions paramter denoting zero level suppression
+  double m_phaZeroThreshold;
 
   /// Access the methods in the AcdDigiUtil class
   AcdDigiUtil m_util;
