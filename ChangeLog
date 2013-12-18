@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: damgreen  Tue Dec 17 20:49:27 PST 2013
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h AcdDigiUtil.cxx AcdDigiUtil.h 
+Log Message:
+Updating AcdDigi with improved zero suppression
+    *
+------------------------------------------------------------
 User: heather  Mon Jan  7 12:18:47 PST 2013
 AcdDigi/cmt
 
