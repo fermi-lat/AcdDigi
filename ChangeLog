@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Feb 13 19:29:48 PST 2014
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h AcdDigiUtil.cxx 
+Log Message:
+Fixes to deal with single PMT hits in overlays
+    *
+------------------------------------------------------------
 User: heather  Wed Dec 18 07:38:02 PST 2013
 AcdDigi/doc
 
