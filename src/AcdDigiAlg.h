@@ -23,7 +23,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdDigi/src/AcdDigiAlg.h,v 1.23 2011/12/12 20:17:34 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.24 2013/12/18 04:49:27 damgreen Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -98,6 +98,9 @@ private:
   std::map<idents::AcdId, std::pair<double, double> > m_peMap;
   std::map<idents::AcdId, std::pair<double, double> > m_mipsMap;
   std::map<idents::AcdId, unsigned int>               m_statusMap;
+
+  unsigned short m_gemDeltaEventTime;
+
 
 };
 
