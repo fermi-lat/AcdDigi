@@ -23,7 +23,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.24 2013/12/18 04:49:27 damgreen Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.25 2014/02/14 03:29:48 echarles Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -76,6 +76,10 @@ private:
   /// JobOptions parameter denoting whether or not to apply Coherent readout noise 
   /// to the PHA values
   bool m_apply_coherent_noise;
+
+  /// JobOptions parameter denoting whether or not coherent noise is in the overlay events 
+  /// to the PHA values
+  bool m_coherent_noise_in_overlay;
 
   /// JobOptions parameter denoting whether or not to apply edge effects
   /// according to the position of MC hits.
