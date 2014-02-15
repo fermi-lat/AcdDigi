@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Feb 14 18:13:33 PST 2014
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h 
+Log Message:
+Avoid double counting coherent noise in AcdDigi
+    *
+------------------------------------------------------------
 User: echarles  Thu Feb 13 19:29:48 PST 2014
 AcdDigi/src
 
