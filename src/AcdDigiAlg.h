@@ -2,6 +2,7 @@
 #define _AcdDigi_AcdDigiAlg_H 1
 
 #include "GaudiKernel/Algorithm.h"
+#include "GaudiKernel/DataSvc.h"
 
 #include "idents/AcdId.h"
 
@@ -23,7 +24,7 @@
 * 
 * @author Heather Kelly
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.25 2014/02/14 03:29:48 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.h,v 1.26 2014/02/15 02:13:33 echarles Exp $
 */
 
 class AcdDigiAlg : public Algorithm {
@@ -105,6 +106,9 @@ private:
 
   unsigned short m_gemDeltaEventTime;
 
+  /// This is for the overlays
+  DataSvc* m_dataSvc;
+  
 
 };
 
