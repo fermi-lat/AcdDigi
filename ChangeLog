@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Feb 19 10:55:10 PST 2014
+AcdDigi/src
+
+Modified Files:
+	AcdDigiAlg.cxx AcdDigiAlg.h 
+Log Message:
+Fix AcdDigi to get gemDeltaEventTime directly from GemOverlay object
+    *
+------------------------------------------------------------
 User: echarles  Wed Feb 19 10:55:04 PST 2014
 AcdDigi
 
