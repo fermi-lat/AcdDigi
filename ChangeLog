@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Wed Mar 12 12:23:03 PDT 2014
+AcdDigi/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+set applyCoherentNoise to false as default to avoid Overlays
+    *
+------------------------------------------------------------
+User: heather  Wed Mar 12 12:23:03 PDT 2014
 AcdDigi
 
 Modified Files:
