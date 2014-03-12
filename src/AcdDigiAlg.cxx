@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiAlg_CXX
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.59 2014/02/15 02:13:33 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiAlg.cxx,v 1.60 2014/02/19 18:55:04 echarles Exp $
 // Description:
 // Implementation of the latest digitization algorithm for the ACD where
 // the Monte Carlo hit information is assumed to be stored in McPositionHits.
@@ -42,7 +42,7 @@ Algorithm(name, pSvcLocator) {
     declareProperty("AcdSimCalibSvc",    m_calibSvcName = "AcdSimCalibSvc");
     declareProperty("applyPoisson", m_apply_poisson=true);
     declareProperty("applyGaussianNoise", m_apply_noise=true);
-    declareProperty("applyCoherentNoise", m_apply_coherent_noise=true);
+    declareProperty("applyCoherentNoise", m_apply_coherent_noise=false);
     declareProperty("coherentNoiseInOverlay", m_coherent_noise_in_overlay=true);
     declareProperty("edgeEffect", m_edge_effect=true);
     declareProperty("lightYeildRatio", m_lightYeildRatio=1.0);
@@ -154,7 +154,8 @@ StatusCode AcdDigiAlg::initialize() {
       IService* dataSvc = 0;
       sc = service(dataSvcName, dataSvc);
       if (sc.isFailure() ) {
-          log << MSG::ERROR << "  can't get OverlayDataSvc " << endreq;
+          log << MSG::ERROR << "  can't get OverlayDataSvc, needed when " <<
+               "AcdDigiAlg.applyCoherentNoise set to true" << endreq;
 	  return sc;
       }
 
