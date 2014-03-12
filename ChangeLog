@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Mar 12 12:23:03 PDT 2014
+AcdDigi
+
+Modified Files:
+	SConscript 
+Log Message:
+set applyCoherentNoise to false as default to avoid Overlays
+    *
+------------------------------------------------------------
 User: echarles  Wed Feb 19 10:55:55 PST 2014
 AcdDigi/cmt
 
