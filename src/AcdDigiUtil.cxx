@@ -1,7 +1,7 @@
 #define AcdDigi_AcdDigiUtil_CPP 
 
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.30 2014/02/14 03:29:48 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/AcdDigiUtil.cxx,v 1.31 2014/02/15 02:44:11 echarles Exp $
 // Description
 // Some utility methods helpful for performing the ACD digitization.
 
@@ -274,8 +274,8 @@ StatusCode AcdDigiUtil::photoElectronsFromEnergy_tile(const Event::McPositionHit
   
   // Added in Feb. 2014 by EAC to allow for single hits coming from overlays
   if ( ( hit->getPackedFlags() & 0xF0000000 ) == (unsigned int)Event::AcdDigi::DIGI_OVERLAY ) { 
-    bool acceptPMT_A = (hit->getPackedFlags() & 0x0000001) != 0;
-    bool acceptPMT_B = (hit->getPackedFlags() & 0x0001000) != 0;
+    bool acceptPMT_A = (hit->getPackedFlags() & 0x00000001) != 0;
+    bool acceptPMT_B = (hit->getPackedFlags() & 0x00010000) != 0;
     if ( acceptPMT_A && ( ! acceptPMT_B ) ) {
       energy_A += energy_B;
       energy_B = 0.;
